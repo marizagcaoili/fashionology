@@ -2,7 +2,7 @@
 <html>
 <head></head>
 <body>
-    <div class="container clearfix">
+    <div>
         <?= $this->fetch('content') ?>
     </div>
 </body>

@@ -79,9 +79,37 @@ Router::scope('/', function (RouteBuilder $routes) {
 
 Router::prefix('Admin', function ($routes) {
     // Admin
+    //Dashboard
     $routes->connect('/admin/dashboard', ['controller' => 'dashboard', 'action' => 'index']);
 
+    //Catalog
+
+        //ITEM
+        $routes->connect('/admin/catalog/add_item', ['controller' => 'catalog', 'action' => 'addItem']);
+
+        $routes->connect('/admin/catalog/items', ['controller' => 'catalog', 'action' => 'items']);
+
+       
+        //---/>ITEM
+
+
+        //CATEGORY
+
+        $routes->connect('/admin/catalog/category', ['controller' => 'catalog', 'action' => 'category']);
+
+        //--/>CATEGORY
+
+        //BRAND
+
+        $routes->connect('/admin/catalog/brands', ['controller' => 'catalog', 'action' => 'brands']);
+
+        //--/>BRAND
+
+
+    //--/>Catalog
+
     $routes->fallbacks('DashedRoute');
+
 });
 
 Router::prefix('Front', function ($routes) {

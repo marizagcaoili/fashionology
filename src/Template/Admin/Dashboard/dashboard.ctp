@@ -82,7 +82,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </form>
       <!-- /.search form -->
 
- <?php include LAYOUT_DIR . 'navbar.php'; ?>
+ <?php include LAYOUT_DIR . 'navbar.ctp'; ?>
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

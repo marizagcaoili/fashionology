@@ -5435,3 +5435,506 @@ Stack Trace:
 #16 {main}
 
 
+2016-08-06 10:47:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /admin
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:47:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /admin
+Referer URL: http://fashionology.com.ph/admin
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:47:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Admin
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:47:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Admin
+Referer URL: http://fashionology.com.ph/Admin
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Admin/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Admin/items
+Referer URL: http://fashionology.com.ph/Admin/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Items could not be found.
+Exception Attributes: array (
+  'class' => 'Items',
+  'plugin' => NULL,
+  'prefix' => 'admin',
+  '_ext' => NULL,
+)
+Request URL: /admin/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Items could not be found.
+Exception Attributes: array (
+  'class' => 'Items',
+  'plugin' => NULL,
+  'prefix' => 'admin',
+  '_ext' => NULL,
+)
+Request URL: /admin/items
+Referer URL: http://fashionology.com.ph/admin/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Items could not be found.
+Exception Attributes: array (
+  'class' => 'Items',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Items could not be found.
+Exception Attributes: array (
+  'class' => 'Items',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /items
+Referer URL: http://fashionology.com.ph/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/main.css
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 10:48:46 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::color.php() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'color.php',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/color.php
+Referer URL: http://fashionology.com.ph/admin/catalog/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 10:48:47 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::color.php() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'color.php',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/color.php
+Referer URL: http://fashionology.com.ph/admin/catalog/color.php
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 12:20:29 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 63]
+Request URL: /api/sum
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-06 12:20:30 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /api/sum
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'F:\\xampp\\htdocs...', 63)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-08-06 12:44:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:44:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:45:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:45:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:47:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:47:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:47:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 12:49:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Public could not be found.
+Exception Attributes: array (
+  'class' => 'Public',
+  'plugin' => NULL,
+  'prefix' => 'front',
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 13:07:25 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::color.php() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'color.php',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/color.php
+Referer URL: http://fashionology.com.ph/admin/catalog/items
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 13:07:26 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::color.php() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'color.php',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/color.php
+Referer URL: http://fashionology.com.ph/admin/catalog/color.php
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 13:07:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/main.css
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 13:08:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/main.css
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 13:08:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/main.css
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-08-06 13:08:52 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::index2.html() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'index2.html',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/index2.html
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 13:08:53 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::index2.html() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'index2.html',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/index2.html
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 13:08:54 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::index2.html() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'index2.html',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/index2.html
+Referer URL: http://fashionology.com.ph/admin/catalog/index2.html
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 13:09:18 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::sizes.php() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'sizes.php',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/sizes.php
+Referer URL: http://fashionology.com.ph/admin/catalog/category
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-06 13:09:20 Error: [Cake\Controller\Exception\MissingActionException] Action CatalogController::sizes.php() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CatalogController',
+  'action' => 'sizes.php',
+  'prefix' => 'admin',
+  'plugin' => NULL,
+)
+Request URL: /admin/catalog/sizes.php
+Referer URL: http://fashionology.com.ph/admin/catalog/sizes.php
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 F:\xampp\htdocs\git\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\CatalogController))
+#2 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-08-07 10:49:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Front could not be found.
+Exception Attributes: array (
+  'class' => 'Front',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /front/public/js/angular.min.js.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 F:\xampp\htdocs\git\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

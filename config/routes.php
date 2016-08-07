@@ -47,16 +47,34 @@ Router::scope('/', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
+
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+
+
+
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+
+
     // Front
+
+    
+    $routes->connect('/', ['controller' => 'home', 'action' => 'index']);
+    $routes->connect('/clothing', ['controller' => 'home', 'action' => 'clothing']);
+
+
+    // Sample Data
+    $routes->connect('/apitest', ['controller' => 'home', 'action' => 'apitest']);
+    $routes->connect('/api/sum/', ['controller' => 'api', 'action' => 'apisum']);
+
+
+
+
 
     /**
      * Connect catchall routes for all controllers.
@@ -85,23 +103,23 @@ Router::prefix('Admin', function ($routes) {
     //Catalog
 
         //ITEM
-        $routes->connect('/admin/catalog/add_item', ['controller' => 'catalog', 'action' => 'addItem']);
+    $routes->connect('/admin/catalog/add_item', ['controller' => 'catalog', 'action' => 'addItem']);
 
-        $routes->connect('/admin/catalog/items', ['controller' => 'catalog', 'action' => 'items']);
+    $routes->connect('/admin/catalog/items', ['controller' => 'catalog', 'action' => 'items']);
 
-       
+    
         //---/>ITEM
 
 
         //CATEGORY
 
-        $routes->connect('/admin/catalog/category', ['controller' => 'catalog', 'action' => 'category']);
+    $routes->connect('/admin/catalog/category', ['controller' => 'catalog', 'action' => 'category']);
 
         //--/>CATEGORY
 
         //BRAND
 
-        $routes->connect('/admin/catalog/brands', ['controller' => 'catalog', 'action' => 'brands']);
+    $routes->connect('/admin/catalog/brands', ['controller' => 'catalog', 'action' => 'brands']);
 
         //--/>BRAND
 
@@ -112,10 +130,6 @@ Router::prefix('Admin', function ($routes) {
 
 });
 
-Router::prefix('Front', function ($routes) {
-    
-    $routes->fallbacks('DashedRoute');
-});
 
 /**
  * Load all plugin routes.  See the Plugin documentation on

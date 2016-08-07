@@ -11,3 +11,5 @@ class BrandsTable extends Table
         $this->table('tbl_brand');
     }
 }
+
+?>

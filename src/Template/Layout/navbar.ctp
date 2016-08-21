@@ -9,7 +9,7 @@
         </a>
           <ul class="treeview-menu">
           <li><a href="/admin/catalog/items">Items</a></li>
-            <li><a href="/admin/catalog/category">Categories<!-- <i class="fa fa-info" style="position:absolute; left:200px;"></i> --></a> </li>
+            <li><a href="/admin/catalog/categories">Categories<!-- <i class="fa fa-info" style="position:absolute; left:200px;"></i> --></a> </li>
             <li><a href="/admin/catalog/brands">Brands<!-- <i class="fa fa-phone" style="position:absolute; left:200px;"></i> --></a></li>
             <li><a href="color.php">Colors</a></li>
             <li><a href="sizes.php">Sizes</a></li>

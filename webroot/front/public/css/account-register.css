@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:500&subset=devanagari,latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+.top-align {
+  position: relative;
+  top: 130px; }
+
+.account-rgstr-wrap {
+  position: relative;
+  border: solid 1px #fff;
+  width: 84%;
+  left: 104px;
+  height: auto; }
+
+.create-p {
+  font-size: 56px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #111;
+  padding: 0; }
+
+.tagline-p {
+  position: relative;
+  font-size: 32px;
+  font-family: Coves;
+  margin: 0;
+  padding: 0;
+  top: -26px;
+  color: #333; }
+
+.required-wrap {
+  position: relative;
+  top: 10px;
+  padding: 14px;
+  height: auto;
+  border: solid 1px #fff; }
+
+.required-para {
+  font-size: 20px;
+  font-family: Coves;
+  font-weight: bold; }
+
+.form-register {
+  border: solid 1px #fff;
+  width: 58%;
+  margin-left: 30px; }
+
+.form-p {
+  font-size: 20px;
+  font-family: Coves;
+  font-weight: bold;
+  border: solid 1px #fff;
+  width: 50%;
+  text-align: right; }
+
+.form-align {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 170px;
+  width: 310px; }
+
+.additional-align {
+  margin-top: 10px; }
+
+.additional-right {
+  border: solid 1px #fff;
+  height: auto;
+  float: right;
+  width: 56%; }
+
+/**flexbox**/
+.register-wrap {
+  position: relative;
+  top: 10px;
+  border: solid 1px #fff;
+  width: 84%;
+  left: 104px;
+  height: auto; }
+
+.wrap-flex {
+  display: inline-flex;
+  display: flex;
+  height: 410px; }
+  .wrap-flex .flex-a {
+    flex: 1 8 50%;
+    width: 100%;
+    border: solid 1px #fff;
+    background: #fff; }
+  .wrap-flex .flex-b {
+    flex: 1 8 50%;
+    width: 100%;
+    border: solid 1px #fff; }
+
+.notice {
+  position: relative;
+  border: solid 1px #fff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 4px;
+  left: -4px; }
+
+.agreement-wrap {
+  position: relative;
+  border: solid 1px #fff;
+  top: 20px;
+  width: 70%;
+  float: right;
+  margin-right: 30px; }
+  .agreement-wrap p {
+    text-align: right;
+    font-family: 'Open Sans',sans-serif; }
+
+.btn-accept {
+  position: relative;
+  top: -6px;
+  font-size: 18px;
+  float: right;
+  padding: 2px 18px;
+  font-family: Coves;
+  background: transparent;
+  color: #000;
+  border: solid 1px;
+  font-weight: bold; }
+  .btn-accept:hover {
+    background: #000;
+    color: #fff; }
+
+.img-right {
+  position: relative;
+  width: 410px;
+  margin-left: 82px;
+  top: 100px; }
+
+.img-bottom {
+  position: relative;
+  width: 210px;
+  margin-left: 150px;
+  top: 80px; }
+
+.footer {
+  position: relative;
+  top: 40px;
+  height: 100px;
+  border: solid 1px #fff; }
+
+/*# sourceMappingURL=account-register.css.map */

@@ -65,14 +65,39 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     
     $routes->connect('/', ['controller' => 'home', 'action' => 'index']);
-    $routes->connect('/clothing', ['controller' => 'home', 'action' => 'clothing']);
+
+    $routes->connect('/api/images/', ['controller' => 'api','action' => 'apiimage']);
+
+    $routes->connect('/clothing', ['controller' => 'home','action' => 'clothing']);
+
+    $routes->connect('/clothing/item', ['controller' => 'home','action' => 'productview']);
+
+    $routes->connect('/register', ['controller' => 'home','action' => 'register']);
+
+    $routes->connect('/user/login', ['controller' => 'home','action' => 'login']);
+
+
+    $routes->connect('/clothing/fetchDetails', ['controller' => 'api','action' => 'productviewer']);
+
+
+    $routes->connect('/checkout', ['controller' => 'home','action' => 'checkout']);
+
+
+
+    $routes->connect('/api/viewToCart', ['controller' => 'api','action' => 'cartView']);
+
+    $routes->connect('/api/addToCart', ['controller' => 'api','action' => 'addToCart']);
+
+    $routes->connect('/api/removeToCart', ['controller' => 'api','action' => 'removeToCart']);
+
+    $routes->connect('/api/viewToCart', ['controller' => 'api','action' => 'cartView']);
+
 
 
     // Sample Data
     $routes->connect('/apitest', ['controller' => 'home', 'action' => 'apitest']);
-    $routes->connect('/api/sum/', ['controller' => 'api', 'action' => 'apisum']);
 
-
+    $routes->connect('/api/sum/', ['controller' => 'api', 'action' => 'register']);
 
 
 
@@ -96,16 +121,25 @@ Router::scope('/', function (RouteBuilder $routes) {
 });
 
 Router::prefix('Admin', function ($routes) {
-    // Admin
+     // Admin
     //Dashboard
     $routes->connect('/admin/dashboard', ['controller' => 'dashboard', 'action' => 'index']);
+
+    $routes->connect('/admin/catalog/angularjs', ['controller' => 'catalog', 'action' => 'angularjs']);
 
     //Catalog
 
         //ITEM
+    $routes->connect('/admin/catalog/item_form', ['controller' => 'catalog', 'action' => 'itemForm']);
+
     $routes->connect('/admin/catalog/add_item', ['controller' => 'catalog', 'action' => 'addItem']);
 
     $routes->connect('/admin/catalog/items', ['controller' => 'catalog', 'action' => 'items']);
+
+    $routes->connect('/admin/catalog/get_items', ['controller' => 'catalog', 'action' => 'getItems']);
+
+    $routes->connect('/admin/catalog/get_prefix', ['controller' => 'catalog', 'action' => 'getPrefix']);
+
 
     
         //---/>ITEM
@@ -113,7 +147,18 @@ Router::prefix('Admin', function ($routes) {
 
         //CATEGORY
 
-    $routes->connect('/admin/catalog/category', ['controller' => 'catalog', 'action' => 'category']);
+    $routes->connect('/admin/catalog/categories', ['controller' => 'catalog', 'action' => 'categories']);
+
+    $routes->connect('/admin/catalog/add_category', ['controller' => 'catalog', 'action' => 'addCategory']);   
+
+    $routes->connect('/admin/catalog/get_categories', ['controller' => 'catalog', 'action' => 'getCategories']);
+
+    $routes->connect('/admin/catalog/second_category', ['controller' => 'catalog', 'action' => 'secondCategory']);
+
+    $routes->connect('/admin/catalog/top_category', ['controller' => 'catalog', 'action' => 'topCategory']);    
+
+    $routes->connect('/admin/catalog/get_parents', ['controller' => 'catalog', 'action' => 'getParents']);
+
 
         //--/>CATEGORY
 
@@ -121,12 +166,23 @@ Router::prefix('Admin', function ($routes) {
 
     $routes->connect('/admin/catalog/brands', ['controller' => 'catalog', 'action' => 'brands']);
 
+    $routes->connect('/admin/catalog/get_brands', ['controller' => 'catalog', 'action' => 'getBrands']);
+
+    $routes->connect('/admin/catalog/add_brand', ['controller' => 'catalog', 'action' => 'addBrand']);
+
         //--/>BRAND
 
+
+        //IMAGE
+
+    $routes->connect('/admin/catalog/upload_image', ['controller' => 'catalog', 'action' => 'uploadImage']);
+
+        //--/>
 
     //--/>Catalog
 
     $routes->fallbacks('DashedRoute');
+
 
 });
 
@@ -136,3 +192,8 @@ Router::prefix('Admin', function ($routes) {
  * how to customize the loading of plugin routes.
  */
 Plugin::routes();
+
+
+
+
+?>

@@ -38,3 +38,6 @@ class DashboardController extends Controller
         $this->render('dashboard');
     }
 }
+
+
+?>

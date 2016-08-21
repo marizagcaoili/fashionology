@@ -10,7 +10,6 @@ class ItemsTable extends Table
     public function initialize(array $config)
     {
         $this->table('tbl_items');
-
         $this->belongsTo('Brands');
     }
 
@@ -18,12 +17,20 @@ class ItemsTable extends Table
     {
     	// Query
         return $this->find()
-        			->contain(['Brands'])
-        			->toArray();
+        ->contain(['Brands'])
+        ->toArray();
     }
 
-    public function addItem()
+    public function insertItem($item_code, $status, $brand, $quantity, $srp, $item_name, $desc, $categoryid)
     {
-
+        return $this->query()
+        ->insert(['item_code', 'item_status', 'brand_id', 'item_quantity', 'item_srp', 'item_name', 'item_description', 'category_id'])
+        ->values(['item_code'=>$item_code, 'item_status'=>$status, 'brand_id'=>$brand, 'item_quantity'=>$quantity, 'item_srp'=>$srp, 'item_name'=>$item_name, 'item_description'=>$desc, 'category_id'=>$categoryid])
+        ->execute();
     }
+
+
+
 }
+
+?>

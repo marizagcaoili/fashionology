@@ -19,7 +19,6 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
-
 /**
  * Static content controller
  *
@@ -31,20 +30,90 @@ use Cake\ORM\TableRegistry;
 
 class HomeController extends Controller
 {
+    public function initialize(){
+        parent::initialize();
+        $this->loadComponent('Cookie', ['expiry' => '1 day']);
+    }
 
     public function index(){
 
         $this->render('home');
     }
 
-     public function clothing(){
+    public function clothing(){
+        // $items = array(array("item_id" => 1, "quantity" => 1), array("item_id" => 2, "quantity" => 1));
+        // // Add new
+        // $this->Cookie->write('test', $items);
+
+
+        // // Update remove cookie
+        // $o_items = $this->Cookie->read('test');
+        // $to_remove = 1;
+        // foreach ($o_items as $key => $item) {
+        //     if($item['item_id'] == $to_remove) {
+        //         unset($o_items[$key]); // Remove item from cookie
+        //     }
+        // }
+
+        // $this->Cookie->write('test', $o_items);
+
+        // // Update add cookie
+        // $o_items = $this->Cookie->read('test');
+        // $to_add = 3;
+        // $to_add_qty = 1;
+        // $o_items[] = array("item_id" => 3, "quantity" => 1);var
+        // $this->Cookie->write('test', $o_items);
+
+     // $cart_id=json_decode($_COOKIE['cart_items']);
+
+     // unset($cart_id['']);
+
+     // $json=json_encode($cart_id);
+
+
+
+
+
+    // var_dump($json);     
+
+
+
+       // $ids=arr[$cart_id];
+
+       //  var_dump($ids);       
+
+        // $str_tmp="";
+
+
+        // $result=Hash::remove($cart_id,'int');
+        // var_dump($result);
+
+
 
         $this->render('clothing');
     }
 
     public function apitest(){
-            $this->render('apitest');
-    
+        $this->render('apitest');
     }
+
+    public function productview(){
+       $this->render('productview');
+
+
+   }
+
+   public function register(){
+    $this->render('accountregister');
+}
+
+
+public function login(){
+    $this->render('accountlogin');
+}
+
+public function checkout(){
+    $this->render('checkout');
+}
 
 }

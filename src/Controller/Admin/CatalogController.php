@@ -65,8 +65,6 @@ class CatalogController extends Controller
         exit(); 
     }
     
-
-    
     public function addItem()
     {
 
@@ -281,3 +279,7 @@ class CatalogController extends Controller
 
     //display
 }
+
+
+
+?>

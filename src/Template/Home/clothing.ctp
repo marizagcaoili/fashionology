@@ -1,164 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title></title>
+    <title>Fashionology PH</title>
 
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link href="/front/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/front/assets/css/material-kit.css" rel="stylesheet"/>
 
+   <?php include LAYOUT_DIR . 'front-css.ctp'; ?>
 
-    <link rel="stylesheet" href="/front/public/css/main-style.css">
-
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--scripts-->
 
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+   <?php include LAYOUT_DIR . 'front-script.ctp'; ?>
 
-    <script src="/front/public/js/dropdown.js" type="text/javascript" charset="utf-8" async defer></script>
 
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
 
 </head>
-<body class="index-page">
+<body class="index-page " ng-controller="testController"  ng-app="SampleApp">
 
-    <script>
-
-    </script>
-
-    <header class="masthead" > <!--background: #232323;-->  
-        <img src="/front/public/img/logo1.png" class="logo">
-
-        <nav class="nav-a">
-            <ul>
-             <a style="color:#fff;" href="/"><li>home </li></a>
-             <a style="color:#a8a8a8;" href="#"><li>clothing <i class="fa fa-angle-down" aria-hidden="true"></i></li></a>
-             <a style="color:#fff;" href="#"><li>mix n match</li></a>
-             <a  style="color:#fff;" href="#"><li>contact</li></a>
-         </ul>
-     </nav>
-
-     <nav class="nav-b">
-        <ul>
-         <a style="color:#fff;" href="#"><li>login</li></a>
-         <a style="color:#fff;" href="#" class="sign-up" ><li>sign up</li></a>
-         <a style="color:#fff;" href="#"><li><i class="fa fa-search" aria-hidden="true"></i></li></a>
-         <a style="color:#fff;" href="#"><li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li></a>
-
-         <a class="count-cart" style="position:absolute;
-         font-size:8px;
-         padding: 4px 8px;
-         margin-top: -18px;
-         margin-left: 240px;
-         border-radius:50%;
-         background: #e74c3c;"><li>1</li></a>
-     </ul>
- </nav>
-</header>
+    <div class='prod-index-page'>
+        <div>
 
 
 
+           <header class="masthead" > <!--background: #232323;-->  
+            <img src="/front/public/img/logo1.png" class="logo">
 
-
-<main class="container_14" style="border:none;">
-
-
-    <section class="top-header-disp" >
-        <p class="header-p" style="opacity: 1;">Shop by Category</p>
-    </section>
-
-
-
-
-    <div class="content-group">
-
-        <section class="group-filter-recent">
-            <p class="indicator-by">Filter By <i class="fa fa-filter" aria-hidden="true"></i></p>
-
-            <div class="filter-group">
+            <nav class="nav-a">
                 <ul>
-                    <li><div class="filter-group-div">
-                        <p class="label-tag">Gender</p>
+                   <a style="color:#fff;" href="/"><li>home </li></a>
+                   <a style="color:#a8a8a8;" href="#"><li>clothing <i class="fa fa-angle-down" aria-hidden="true"></i></li></a>
+                   <a style="color:#fff;" href="#"><li>mix n match</li></a>
+                   <a  style="color:#fff;" href="#"><li>contact</li></a>
+               </ul>
+           </nav>
 
-                        <ul class="gender-group" style="margin-top: -34px;">
-                            <a href="#"><li>M</li></a>
-                            <a href="#"><li>F </li></a>
-                            <a href="#"><li>All </li></a>
-                        </ul>
+           <nav class="nav-b">
+            <ul>
+               <a style="color:#fff;" href="/user/login"><li>login</li></a>
+               <a style="color:#fff;" href="/register" class="sign-up" ><li>sign up</li></a>
+               <a style="color:#fff;" href="#"><li><i class="fa fa-search" aria-hidden="true"></i></li></a>
+               <a style="color:#fff;" href="#"><li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li></a>
 
-                    </div></li>
-                    <li><div class="filter-group-div" style="height:90px;">
-                        <p class="label-tag">Color</p>
+               <a class="count-cart" style="position:absolute;
+               font-size:8px;
+               padding: 4px 8px;
+               margin-top: -18px;
+               margin-left: 240px;
+               border-radius:50%;
+               background: #e74c3c;"
+               ><li>{{cart_items_count}}</li></a>
 
-                        <ul class="color-group">
-                            <li>
-                             <div class="radio" data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
-                                <label>
-                                    <input type="radio" name="optionsRadios"  checked="true" >
-                                    
-                                </label>
-                            </div>
-                        </li>
+
+           </ul>
+       </nav>
+   </header>
+
+
+
+
+
+
+   <main class="container_14" style="border:none;"
+   ng-app="SampleApp">
+
+   <script src="/front/public/js/jquery17.js"></script>
+   <script>
+
+    jQuery(function($) {
+      function fixDiv() {
+        var $cache = $('#getFixed');
+        if ($(window).scrollTop() > 374)
+          $cache.css({
+            'position': 'fixed',
+            'top': '0px',
+            'background':'#fff',
+            'z-index':'1',
+            'height':'54px'
+        });
+      else
+          $cache.css({
+            'position': 'relative',
+            'top': 'auto',
+            'border-bottom':'none'
+        });
+  }
+  $(window).scroll(fixDiv);
+  fixDiv();
+});
+
+</script>
+
+
+
+<section class="top-header-disp" >
+    <p class="header-p" style="opacity: 1;">Shop by Category</p>
+</section>
+
+
+
+
+<div class="content-group">
+
+    <section class="group-filter-recent" >
+        <p class="indicator-by">Filter By <i class="fa fa-filter" aria-hidden="true"></i></p>
+
+        <div class="filter-group">
+            <ul>
+                <li><div class="filter-group-div">
+                    <p class="label-tag">Gender</p>
+
+                    <ul class="gender-group" style="margin-top: -34px;">
+                        <a href="#"><li>M</li></a>
+                        <a href="#"><li>F </li></a>
+                        <a href="#"><li>All </li></a>
+                    </ul>
+
+                </div></li>
+                <li><div class="filter-group-div" style="height:90px;">
+                    <p class="label-tag">Color</p>
+
+                    <ul class="color-group">
                         <li>
+                           <div class="radio" data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
+                            <label>
+                                <input type="radio" name="optionsRadios"  checked="true" >
 
-                         <div class="radio">
-                            <label data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
-                                <input type="radio" name="optionsRadios" checked="true">
-                                
                             </label>
                         </div>
                     </li>
-
                     <li>
 
-                     <div class="radio">
+                       <div class="radio">
                         <label data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
                             <input type="radio" name="optionsRadios" checked="true">
-                            
                         </label>
                     </div>
                 </li>
 
                 <li>
-                 <div class="radio">
+
+                   <div class="radio">
                     <label data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
-                        <input type="radio" name="optionsRadios" >
-                        
+                        <input type="radio" name="optionsRadios" checked="true">
+
                     </label>
                 </div>
             </li>
-            <li>
 
-             <div class="radio">
+
+            <li>
+               <div class="radio">
                 <label data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
                     <input type="radio" name="optionsRadios" >
-                    
+
                 </label>
             </div>
         </li>
-
         <li>
 
-         <div class="radio">
+           <div class="radio">
             <label data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
-                <input type="radio" name="optionsRadios" checked="true">
-                
+                <input type="radio" name="optionsRadios" >
+
             </label>
         </div>
     </li>
+
+    <li>
+
+       <div class="radio">
+        <label data-toggle="tooltip" data-placement="top" title="Pink" data-container="body">
+            <input type="radio" name="optionsRadios" checked="true">
+
+        </label>
+    </div>
+</li>
 </ul>
 
 </div></li>
 <li><div class="filter-group-div">
-    <p class="label-tag">Size</p>
+    <p class="label-tag" style="margin-top:-30px;">Size</p>
 
     <ul class="size-group" style="height:10px;" > <!--size group-->
         <a><li>S</li></a>
@@ -175,31 +208,32 @@
 </ul>
 </div>
 
-<div class="recent-group">
+<div class="recent-group" >
     <p class="indicator-by" style="top:16px;width:190px;">Recent Products</p>
 
     <div class="recent-added-group">
-        <ul class="recent-ul-added">
-            <li><div class="recent-each-item">
+        <ul class="recent-ul-added" >
+            <li><div class="recent-each-item" style='width:96%;'>
                 <img src="/front/public/img/a.jpg">
                 <p class="product-recent-name">Product Name</p>
                 <p class="product-recent-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper pulvinar erat eget auctor. Pellentesque facilisis sed massa nec gravida. Integer semper maximus metus at fringilla.</p>
             </div>
         </li>
 
-        <li><div class="recent-each-item">
-            <img src="/front/public/img/b.jpg">
+        <li><div class="recent-each-item" style='width:96%;'>
+            <img src="/front/public/img/a.jpg">
             <p class="product-recent-name">Product Name</p>
             <p class="product-recent-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper pulvinar erat eget auctor. Pellentesque facilisis sed massa nec gravida. Integer semper maximus metus at fringilla.</p>
         </div>
     </li>
 
-    <li><div class="recent-each-item">
-        <img src="/front/public/img/c.jpg">
+    <li><div class="recent-each-item" style='width:96%;'>
+        <img src="/front/public/img/a.jpg">
         <p class="product-recent-name">Product Name</p>
         <p class="product-recent-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper pulvinar erat eget auctor. Pellentesque facilisis sed massa nec gravida. Integer semper maximus metus at fringilla.</p>
     </div>
 </li>
+
 
 
 </ul>
@@ -210,259 +244,66 @@
 </section>
 
 <section class="group-products">
-    <div class="top-bar-menu">
+    <div class="top-bar-menu" id='getFixed'>
 
 
-        <p class="found-count">1230 PRODUCTS FOUND.</p>
+        <p class="found-count"><span style="color:#a60400;">1230</span> PRODUCTS FOUND.</p>
 
 
         <select class="form-control select-sort" style="width:110px;margin-top: -24px;
         margin-left: 20px;" >
         <option value="one">sort by</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-        <option value="four">Four</option>
-        <option value="five">Five</option>
+        <option value="two">Popularity</option>
+        <option value="three">Most liked</option>
+        <option value="four">A-Z</option>
+        <option value="five">Z-A</option>
     </select>
 
 
     <!---->
-            <div class="item-page">
-                  <ul class="pagination pagination-primary">
-                        <!--
-                            color-classes: "pagination-primary", "pagination-info", "pagination-success", "pagination-warning", "pagination-danger"
-                        -->
-                        <li><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">..</a></li>
-                        <li><a href="javascript:void(0);">5</a></li>
-                        <li><a href="javascript:void(0);">6</a></li>
-                        <li class="active" ><a href="javascript:void(0);">7</a></li>
-                        <li><a href="javascript:void(0);">8</a></li>
-                        <li><a href="javascript:void(0);">9</a></li>
-                        <li><a href="javascript:void(0);">...</a></li>
-                        <li><a href="javascript:void(0);">12</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="item-page">
 
-                <div class="product-list">
-                    <ul class="product-ul-list">
 
-                        <li><div class="product-div">
-
-                            <figure class="prod-figure"><img src="/front/public/img/b.jpg"></figure>
-                            <p class="product-desc">Broccato Peplum Top</p>
-                            <p class="product-price">P 150.00</p>
-                            <div class="group-menu">
-                                <ul class="group-menu-ul">
-                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </li></a>
-                                    <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </li></a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+        <ul class="pagination pagination-info">
+            <li><a href="javascript:void(0);"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp; prev</a></li>
+            <li><a href="javascript:void(0);">1</a></li>
+            <li><a href="javascript:void(0);">2</a></li>
+            <li class="active"><a href="javascript:void(0);">3</a></li>
+            <li><a href="javascript:void(0);">4</a></li>
+            <li><a href="javascript:void(0);">5</a></li>
+            <li><a href="javascript:void(0);">next &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+        </ul>
 
 
 
-                    <li><div class="product-div">
-
-                        <figure class="prod-figure"><img src="/front/public/img/c.jpg"></figure>
-                        <p class="product-desc">Broccato Peplum Top</p>
-                        <p class="product-price">P 150.00</p>
-                        <div class="group-menu">
-                            <ul class="group-menu-ul">
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </li></a>
-                                <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                </li></a>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
+    </div>
 
 
-                <li><div class="product-div">
+</div>
 
-                    <figure class="prod-figure"><img src="/front/public/img/d.jpg"></figure>
-                    <p class="product-desc">Broccato Peplum Top</p>
-                    <p class="product-price">P 150.00</p>
-                    <div class="group-menu">
-                        <ul class="group-menu-ul">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </li></a>
-                            <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </li></a>
-                        </ul>
-                    </div>
-                </div>
+<div class="product-list">
+    <ul class="product-ul-list" ng-app='routerApp'>
+
+        <li ng-repeat="item in items">
+
+           <a  href='/clothing/item?item_id={{item.item.item_id}}'><div class="product-div" >
+
+            <figure class="prod-figure"><img src="{{item.img_path}}"></figure>
+            <p class="product-desc">{{item.item.item_name}}</p>
+            <p class="product-price">{{item.item.item_srp}}.00</p>
+            <div class="group-menu" ng-app="app">
+                <ul class="group-menu-ul" bs-popover>
+                    <a href ng:click="addtowish()" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"
+                    tooltip ><li class="wlist-add"
+                    ><i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li></a>
+                <a  href  ng:click="addItem(item.item.item_id)"  data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
             </li>
-
-
-
-            <li><div class="product-div">
-
-                <figure class="prod-figure"><img src="/front/public/img/f.jpg"></figure>
-                <p class="product-desc">Broccato Peplum Top</p>
-                <p class="product-price">P 150.00</p>
-                <div class="group-menu">
-                    <ul class="group-menu-ul">
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                        </li></a>
-                        <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </li></a>
-                    </ul>
-                </div>
-            </div>
-        </li>
-
-
-        <li><div class="product-div">
-
-            <figure class="prod-figure"><img src="/front/public/img/f.jpg"></figure>
-            <p class="product-desc">Broccato Peplum Top</p>
-            <p class="product-price">P 150.00</p>
-            <div class="group-menu">
-                <ul class="group-menu-ul">
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </li></a>
-                    <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </li></a>
-                </ul>
-            </div>
-        </div>
-    </li>
-
-
-
-    <li><div class="product-div">
-
-        <figure class="prod-figure"><img src="/front/public/img/d.jpg"></figure>
-        <p class="product-desc">Broccato Peplum Top</p>
-        <p class="product-price">P 150.00</p>
-        <div class="group-menu">
-            <ul class="group-menu-ul">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                </li></a>
-                <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </li></a>
-            </ul>
-        </div>
-    </div>
-</li>
-
-
-
-<li><div class="product-div">
-
-    <figure class="prod-figure"><img src="/front/public/img/f.jpg"></figure>
-    <p class="product-desc">Broccato Peplum Top</p>
-    <p class="product-price">P 150.00</p>
-    <div class="group-menu">
-        <ul class="group-menu-ul">
-            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-            </li></a>
-            <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </li></a>
         </ul>
     </div>
 </div>
-</li>
-
-
-<li><div class="product-div">
-
-    <figure class="prod-figure"><img src="/front/public/img/b.jpg"></figure>
-    <p class="product-desc">Broccato Peplum Top</p>
-    <p class="product-price">P 150.00</p>
-    <div class="group-menu">
-        <ul class="group-menu-ul">
-            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-            </li></a>
-            <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </li></a>
-        </ul>
-    </div>
-</div>
-</li>
-
-<li><div class="product-div">
-
-    <figure class="prod-figure"><img src="/front/public/img/g.jpg"></figure>
-    <p class="product-desc">Broccato Peplum Top</p>
-    <p class="product-price">P 150.00</p>
-    <div class="group-menu">
-        <ul class="group-menu-ul">
-            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-            </li></a>
-            <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </li></a>
-        </ul>
-    </div>
-</div>
-</li>
-
-
-
-    <li><div class="product-div">
-
-        <figure class="prod-figure"><img src="/front/public/img/d.jpg"></figure>
-        <p class="product-desc">Broccato Peplum Top</p>
-        <p class="product-price">P 150.00</p>
-        <div class="group-menu">
-            <ul class="group-menu-ul">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                </li></a>
-                <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </li></a>
-            </ul>
-        </div>
-    </div>
-</li>
-
-
-
-    <li><div class="product-div">
-
-        <figure class="prod-figure"><img src="/front/public/img/c.jpg"></figure>
-        <p class="product-desc">Broccato Peplum Top</p>
-        <p class="product-price">P 150.00</p>
-        <div class="group-menu">
-            <ul class="group-menu-ul">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                </li></a>
-                <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </li></a>
-            </ul>
-        </div>
-    </div>
-</li>
-
-
-
-    <li><div class="product-div">
-
-        <figure class="prod-figure"><img src="/front/public/img/a.jpg"></figure>
-        <p class="product-desc">Broccato Peplum Top</p>
-        <p class="product-price">P 150.00</p>
-        <div class="group-menu">
-            <ul class="group-menu-ul">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li class="wlist-add"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                </li></a>
-                <a  href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li class="cart-add"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </li></a>
-            </ul>
-        </div>
-    </div>
-</li>
-
-
-
-
-
-
-
+</li></a>
 
 </ul>
 </div>
@@ -473,14 +314,8 @@
 
 </div>
 
-<section class="footer-clothing">
-    </section>
-
-
-
-
-
-
+<section >
+</section>
 
 
 
@@ -492,7 +327,73 @@
 
 
 
+</div>
 
+
+
+
+<div class='sidebar' >
+
+    <div class='sidebar-content' >
+
+
+
+        <div class='sidebar-content-b' >
+
+            <div class='sidebar-lbl'>
+                <p>My Cart</p>
+            </div>
+
+            <div class='sidebar-content-item'>
+
+                <ul>
+                    <li ng-repeat='item in itemis'>
+                        <div class='each-item'>
+                            <div class='each-item-sub'
+                            style='width:295px;'>
+
+                            <div class='close-each'>
+                              <p><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                          </div>
+
+
+                          <div class='each-item-final'>
+                            <img src='{{item.img_path}}' />
+
+                            <div class='cart-detail'>
+                                <p class='cart-name'>{{item.item.item_name}}</p>
+                                <p class='cart-price'>{{item.item.item_srp}}.00</p>
+                                <p class='cart-price'><b>QTY:</b>10</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class='sidebar-content-c'>
+    <div class='sub-total'>
+        <p>SUBTOTAL: <span>PHP 120.00</span></p>
+    </div>
+
+    <div class='group-chck'>
+        <button type='submit' class='view-cart'>VIEW CART</button>
+    </div>
+
+
+    <div class='group-chck'>
+        <button ng-click='checkout()'  class='view-cart checkout'>CHECKOUT</button>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
 </body>
 
 
@@ -504,8 +405,6 @@
 <script src="/front/assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/front/assets/js/material.min.js"></script>
 
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="/front/assets/js/nouislider.min.js" type="text/javascript"></script>
 
 <!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
 <script src="/front/assets/js/bootstrap-datepicker.js" type="text/javascript"></script>

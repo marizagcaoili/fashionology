@@ -85,3 +85,5 @@ define('CORE_PATH', CAKE_CORE_INCLUDE_PATH . DS);
 define('CAKE', CORE_PATH . 'src' . DS);
 
 define('LAYOUT_DIR', ROOT . DS . APP_DIR . DS . 'Template' . DS . 'Layout' . DS);
+
+define('IMAGE_DIR', WWW_ROOT . DS . 'img' . DS);

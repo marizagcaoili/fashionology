@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -5,25 +6,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <link rel="icon" type="image/gif/png" href="/img/hanger.png" >
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fashionology | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="/plugins/datatables/dataTables.bootstrap.css">
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-  <!-- Theme style -->
-  <link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
-
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-   <link rel="stylesheet" href="/dist/css/skins/skin-black-light.min.css">
+<?php include LAYOUT_DIR . 'css.ctp'; ?>
+ 
 
 
 <style type="text/css">
@@ -34,7 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </style>
 </head>
 
-<body class="hold-transition skin-black-light sidebar-mini">
+<body ng-app="admin" ng-controller="CategoryController" class="hold-transition skin-black-light sidebar-mini">
 <div class="wrapper">
 
   <!-- Main Header -->
@@ -108,7 +93,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <ol class="breadcrumb">
         <li><a href="/admin/dashboard"><i class="fa fa-tag"></i> Admin</a></li>
         <li><a href="">Catalog</a></li>
-        <li><a href="/admin/catalog/category"><i class="#"></i> Categories</a></li>
+        <li><a href="/admin/catalog/categories"><i class="#"></i> Categories</a></li>
       </ol>
     </section>
 
@@ -120,14 +105,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="box">
             <div class="box-header">
             <div class="row">
-              <div class="col-xs-4">
+              <div class="col-xs-3">
        
               <h2 class="box-title">Category List</h2>
       
               </div>
               
-              <div class="col-xs-4"></div>
-              <div class="col-xs-4">
+              <div class="col-xs-6">
+ 
+              </div>
+              <div class="col-xs-3">
                 <form name="actionButtons" method="post" action= "product.php" enctype="multipart/form-data">
                   <div class="btn-group" id="alignright">  
                    <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#addcategory"><i class="fa fa-plus"></i></button>  
@@ -135,10 +122,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </form>
               </div>
               </div>
+              <div class="row col-xs-10">
+                   <fieldset class="form-group">
+                        
+                        <div class="col-xs-2">
+                        <label for="category" class="form-label">Group By</label></div>
+                           <div class="col-xs-3">
+                            <select id="group1" class="form-control" ng-model="selectedGroup1" ng-options="parent as parent.category_name for parent in parents track by parent.category_id" ng-change="firstGroup()"  aria-describedby="category">
+                            </select>
+
+                           </div>
+
+                            <div class="col-xs-3">
+                            <select id="group2" class="form-control" ng-model="selectedGroup2" ng-options="secondGroup as secondGroup.category_name for secondGroup in secondGroups track by secondGroup.category_id" ng-change="secondGroup()"  aria-describedby="category">
+                            </select>
+                            </div>
+                             <button type="button" class="btn btn-primary" ng-click="display()" style="border-radius:0px;"> Display All</button>
+                            <div class="col-xs-3">
+                              
+                            </div>
+                    </fieldset>
+                </div>
             </div>
             
 
-            <!-- /.box-header -->
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
@@ -149,10 +156,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </tr>
                 </thead>
                 <tbody>
+                <tr ng-repeat="category in categories">
+                <td>{{category.category_name}}</td>
                 <td></td>
                 <td></td>
-                <td></td>
-
+                </tr>
                 </tbody>
 
               </table>
@@ -166,7 +174,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-<!-- Modal -->
+  <!-- Modal -->
 <div class="modal fade" id="addcategory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -181,29 +189,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
           
             <label for="brand" class="col-xs-3 col-form-label">Parent</label>
              <div class="col-xs-9">
-                  <select type="text" class="form-control" placeholder="Parent" aria-describedby="double">
-                  <option>Category1</option>
-                  <option>Category2</option>
-                  </select>           
+                  <input type="hidden" name="categoryid1" id="category_parent">
+                  <select id="category" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="firstSelected" ng-options="parent as parent.category_name for parent in parents track by parent.category_id" ng-change="getparent()"></select>
+
+
+                  <select id="category2" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="secondSelected" ng-options="secondcategory as secondcategory.category_name for secondcategory in secondcategories track by secondcategory.category_id" ng-change="secondparent()"></select>    
               </div>
         </div>
             <div class="form-group row">
                 <label for="brand" class="col-xs-3 col-form-label">Category Name</label>
                  <div class="col-xs-9">
-                      <input type="text" class="form-control" placeholder="Category Name" aria-describedby="item-code">
+                      <input type="text" id="name" class="form-control" placeholder="Category Name" aria-describedby="item-code">
                   </div>
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" style="border-radius:0px;"> Add</button>
+          <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal" id="modal-close" >Cancel</button>
+          <button type="button" class="btn btn-primary" ng-click="addCategory()" style="border-radius:0px;"> Add</button>
         </div>
       </div>
 
     </div>
   </div>
 
-    
+
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
@@ -216,27 +225,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
  
   <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
 
-<!-- REQUIRED JS SCRIPTS -->
 <!-- jQuery 2.2.3 -->
-<script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="/plugins/datatables/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="/plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="/dist/js/app.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="/dist/js/demo.js"></script>
+
 <!-- page script -->
-<script src="/js/category.js"></script>
+
+<?php include LAYOUT_DIR . 'script.ctp'; ?>
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. Slimscroll is required when using the

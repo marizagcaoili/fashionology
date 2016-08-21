@@ -100,20 +100,44 @@ Router::prefix('Admin', function ($routes) {
     //Dashboard
     $routes->connect('/admin/dashboard', ['controller' => 'dashboard', 'action' => 'index']);
 
+    $routes->connect('/admin/catalog/angularjs', ['controller' => 'catalog', 'action' => 'angularjs']);
+
     //Catalog
 
         //ITEM
+    $routes->connect('/admin/catalog/item_form', ['controller' => 'catalog', 'action' => 'itemForm']);
+
+    $routes->connect('/admin/catalog/edit_item', ['controller' => 'catalog', 'action' => 'editItem']);
+
     $routes->connect('/admin/catalog/add_item', ['controller' => 'catalog', 'action' => 'addItem']);
+
+    $routes->connect('/admin/catalog/get_categorized', ['controller' => 'catalog', 'action' => 'getCategorizedItems']);
 
     $routes->connect('/admin/catalog/items', ['controller' => 'catalog', 'action' => 'items']);
 
+    $routes->connect('/admin/catalog/get_items', ['controller' => 'catalog', 'action' => 'getItems']);
+
+    $routes->connect('/admin/catalog/get_prefix', ['controller' => 'catalog', 'action' => 'getPrefix']);
+
+    $routes->connect('/admin/catalog/get_details', ['controller' => 'catalog', 'action' => 'getDetails']);   
     
         //---/>ITEM
 
 
         //CATEGORY
 
-    $routes->connect('/admin/catalog/category', ['controller' => 'catalog', 'action' => 'category']);
+    $routes->connect('/admin/catalog/categories', ['controller' => 'catalog', 'action' => 'categories']);
+
+    $routes->connect('/admin/catalog/add_category', ['controller' => 'catalog', 'action' => 'addCategory']);   
+
+    $routes->connect('/admin/catalog/get_categories', ['controller' => 'catalog', 'action' => 'getCategories']);
+
+    $routes->connect('/admin/catalog/second_category', ['controller' => 'catalog', 'action' => 'secondCategory']);
+
+    $routes->connect('/admin/catalog/top_category', ['controller' => 'catalog', 'action' => 'topCategory']);    
+
+    $routes->connect('/admin/catalog/get_parents', ['controller' => 'catalog', 'action' => 'getParents']);
+
 
         //--/>CATEGORY
 
@@ -121,8 +145,18 @@ Router::prefix('Admin', function ($routes) {
 
     $routes->connect('/admin/catalog/brands', ['controller' => 'catalog', 'action' => 'brands']);
 
+    $routes->connect('/admin/catalog/get_brands', ['controller' => 'catalog', 'action' => 'getBrands']);
+
+    $routes->connect('/admin/catalog/add_brand', ['controller' => 'catalog', 'action' => 'addBrand']);
+
         //--/>BRAND
 
+       
+        //IMAGE
+
+    $routes->connect('/admin/catalog/upload_image', ['controller' => 'catalog', 'action' => 'uploadImage']);
+
+        //--/>
 
     //--/>Catalog
 

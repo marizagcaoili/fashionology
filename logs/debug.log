@@ -2286,7 +2286,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-07 15:20:44 Notice: Notice (8): Undefined variable: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 63]
 Request URL: /admin/catalog/category
 Referer URL: http://www.fashionology.com.ph/admin/catalog/brands
@@ -9029,19 +9028,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-09 09:22:00 Notice: Notice (8): Undefined variable: brands in [F:\xampp\htdocs\git\src\Template\Home\clothing.ctp, line 294]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Home\clothing.ctp, line 294
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 42
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9049,7 +9035,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 11:36:16 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9057,19 +9042,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-09 09:22:39 Notice: Notice (8): Undefined variable: brands in [F:\xampp\htdocs\git\src\Template\Home\clothing.ctp, line 294]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Home\clothing.ctp, line 294
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 42
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9077,7 +9049,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 11:36:16 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9085,20 +9056,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-09 09:22:40 Notice: Notice (8): Undefined variable: brands in [F:\xampp\htdocs\git\src\Template\Home\clothing.ctp, line 294]
-Request URL: /clothing
-Referer URL: http://fashionology.com.ph/clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Home\clothing.ctp, line 294
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 42
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9106,7 +9063,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 11:36:16 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 274]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9114,19 +9070,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 274
-=======
-2016-08-09 09:23:04 Notice: Notice (8): Undefined variable: brands in [F:\xampp\htdocs\git\src\Template\Home\clothing.ctp, line 294]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Home\clothing.ctp, line 294
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 42
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9134,7 +9077,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:00:37 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9142,20 +9084,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-09 09:23:05 Notice: Notice (8): Undefined variable: brands in [F:\xampp\htdocs\git\src\Template\Home\clothing.ctp, line 294]
-Request URL: /clothing
-Referer URL: http://fashionology.com.ph/clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Home\clothing.ctp, line 294
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 42
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9163,7 +9091,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:00:37 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9171,19 +9098,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9191,7 +9105,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:00:37 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9199,19 +9112,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9219,7 +9119,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:00:37 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9227,19 +9126,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9247,7 +9133,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:01:17 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9255,19 +9140,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9275,7 +9147,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:01:17 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9283,19 +9154,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9303,7 +9161,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:01:17 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9311,19 +9168,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9331,7 +9175,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 15:01:17 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9339,19 +9182,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9359,7 +9189,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 17:28:21 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=15
@@ -9367,19 +9196,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9387,7 +9203,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 17:28:21 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=15
@@ -9395,19 +9210,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9415,7 +9217,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 17:28:21 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=15
@@ -9423,19 +9224,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-19 04:39:17 Notice: Notice (8): Trying to get property of non-object in [F:\xampp\htdocs\git\src\Template\Admin\Catalog\item_list.ctp, line 156]
-Request URL: /admin/catalog/items
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-include - APP/Template\Admin\Catalog\item_list.ctp, line 156
-Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
-Cake\View\View::_render() - CORE\src\View\View.php, line 955
-Cake\View\View::render() - CORE\src\View\View.php, line 587
-Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
-App\Controller\Admin\CatalogController::items() - APP/Controller\Admin\CatalogController.php, line 48
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9443,7 +9231,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 17:28:21 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=15
@@ -9451,15 +9238,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-19 06:36:04 Notice: Notice (8): Use of undefined constant IMAGE_DIR - assumed 'IMAGE_DIR' in [F:\xampp\htdocs\git\src\Controller\Admin\CatalogController.php, line 250]
-Request URL: /admin/catalog/upload_image
-Referer URL: http://fashionology.com.ph/admin/catalog/item_form
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 250
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9467,7 +9245,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:05:09 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9475,15 +9252,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 07:36:15 Notice: Notice (8): Undefined variable: ites in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 46]
-Request URL: /clothing
-Referer URL: http://fashionology.com.ph/
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 46
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9491,7 +9259,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:05:09 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9499,15 +9266,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 11:01:37 Notice: Notice (8): Array to string conversion in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 107]
-Request URL: /api/addToCart
-Referer URL: http://fashionology.com.ph/clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::addToCart() - APP/Controller\ApiController.php, line 107
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9515,7 +9273,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:05:09 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9523,14 +9280,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 11:31:44 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9538,7 +9287,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:05:09 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9546,14 +9294,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 11:32:04 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9561,7 +9301,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:02 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9569,14 +9308,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 11:32:31 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9584,7 +9315,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:02 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9592,15 +9322,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 12:17:35 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Referer URL: http://fashionology.com.ph/
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9608,7 +9329,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:02 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9616,15 +9336,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 13:11:08 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Referer URL: http://fashionology.com.ph/
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9632,7 +9343,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:02 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9640,14 +9350,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 16:23:41 Notice: Notice (8): Undefined variable: cart_id in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 162]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 162
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9655,7 +9357,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:04 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9663,14 +9364,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 16:25:04 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 159]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 159
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9678,7 +9371,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:04 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9686,14 +9378,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 16:26:01 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 160]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 160
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9701,7 +9385,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:04 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9709,14 +9392,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 16:27:34 Notice: Notice (8): Undefined variable: cart_id in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9724,7 +9399,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:04 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9732,14 +9406,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 16:52:41 Notice: Notice (8): Use of undefined constant arr - assumed 'arr' in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 70]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 70
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9747,7 +9413,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9755,14 +9420,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 16:54:25 Notice: Notice (8): Use of undefined constant arr - assumed 'arr' in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 71]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 71
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9770,7 +9427,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9778,14 +9434,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 16:54:25 Notice: Notice (8): Undefined variable: cart_id in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 71]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 71
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9793,7 +9441,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9801,14 +9448,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 16:54:25 Notice: Notice (8): String offset cast occurred in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 71]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 71
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9816,7 +9455,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9824,14 +9462,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 17:00:02 Notice: Notice (8): Undefined variable: str_tmp in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 77]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 77
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9839,7 +9469,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9847,14 +9476,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 17:19:10 Notice: Notice (8): Use of undefined constant console - assumed 'console' in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 73]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 73
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9862,7 +9483,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9870,14 +9490,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 17:19:30 Notice: Notice (8): Use of undefined constant console - assumed 'console' in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 73]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 73
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9885,7 +9497,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9893,14 +9504,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 17:20:02 Notice: Notice (8): Undefined variable: cart_id in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 71]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 71
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9908,7 +9511,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 18:24:05 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9916,14 +9518,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 17:27:35 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 160]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 160
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9931,7 +9525,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:26:29 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9939,14 +9532,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 17:27:58 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 160]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 160
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9954,7 +9539,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:26:29 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9962,14 +9546,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 17:28:21 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 160]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 160
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -9977,7 +9553,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:26:29 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -9985,14 +9560,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 17:47:42 Notice: Notice (8): Array to string conversion in [F:\xampp\htdocs\git\src\Controller\HomeController.php, line 98]
-Request URL: /clothing
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\HomeController::clothing() - APP/Controller\HomeController.php, line 98
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -10000,7 +9567,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:26:29 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -10008,14 +9574,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 17:55:39 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 165]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 165
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -10023,7 +9581,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:28:57 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 265]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -10031,14 +9588,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 265
-=======
-2016-08-20 17:56:15 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 165]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 165
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -10046,7 +9595,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:28:57 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 266]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -10054,14 +9602,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 266
-=======
-2016-08-20 17:58:14 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 165]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 165
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -10069,7 +9609,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:28:57 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 270]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -10077,14 +9616,6 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 270
-=======
-2016-08-20 17:59:24 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Controller\ApiController.php, line 165]
-Request URL: /api/viewToCart
-Client IP: 127.0.0.1
-Trace:
-Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 165
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
@@ -10092,7 +9623,6 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
-<<<<<<< HEAD
 2016-08-20 19:28:57 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 273]
 Request URL: /admin/catalog/upload_image
 Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
@@ -10100,16 +9630,179 @@ Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
 App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 273
-=======
-2016-08-20 18:36:54 Notice: Notice (8): Undefined index: cart_items in [F:\xampp\htdocs\git\src\Model\Table\ImagesTable.php, line 42]
-Request URL: /api/viewToCart
-Referer URL: http://fashionology.com.ph/clothing
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-23 08:46:07 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 295]
+Request URL: /admin/catalog/upload_image
+Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
 Client IP: 127.0.0.1
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
-App\Model\Table\ImagesTable::cartLook() - APP/Model\Table\ImagesTable.php, line 42
-App\Controller\ApiController::cartView() - APP/Controller\ApiController.php, line 175
->>>>>>> 8f1aad0c542ba8ea83613b485bd94199936140c0
+App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 295
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-23 08:46:07 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 296]
+Request URL: /admin/catalog/upload_image
+Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 296
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-23 08:46:07 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 300]
+Request URL: /admin/catalog/upload_image
+Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 300
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-23 08:46:07 Notice: Notice (8): Undefined index: file in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 303]
+Request URL: /admin/catalog/upload_image
+Referer URL: http://www.fashionology.com.ph/admin/catalog/edit_item?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::uploadImage() - APP/Controller\Admin\CatalogController.php, line 303
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 03:59:03 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 03:59:44 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:00:09 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:00:18 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:00:44 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:00:52 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:06:51 Notice: Notice (8): Undefined index: category in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 123]
+Request URL: /admin/catalog/get_details?item_id=15
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 123
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:20:23 Notice: Notice (8): Undefined offset: 0 in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 121]
+Request URL: /admin/catalog/get_details?item_id=15
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 121
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-08-27 04:20:23 Notice: Notice (8): Undefined offset: 0 in [C:\itsp\htdocs\git\src\Controller\Admin\CatalogController.php, line 122]
+Request URL: /admin/catalog/get_details?item_id=15
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\Admin\CatalogController::getDetails() - APP/Controller\Admin\CatalogController.php, line 122
 Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
 Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
 Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87

@@ -134,7 +134,7 @@ body {
     font-size: 16px; }
 
 .shop-now {
-  border: solid 1px;
+  border: solid 2px;
   position: relative;
   top: 48px;
   padding: 10px 22px 10px;
@@ -184,7 +184,8 @@ body {
   height: 80px; }
   .desc-six p {
     margin: 0;
-    font-family: Coves;
+    font-family: Moon;
+    font-weight: bold;
     font-size: 18px; }
   .desc-six p:nth-child(2) {
     font-family: 'Open Sans',sans-serif;
@@ -247,8 +248,7 @@ body {
   font-weight: bold; }
 
 .bg-six {
-  background: #fff;
-  padding: 2px; }
+  background: #f3f2f2; }
 
 .title-release {
   margin: 0;
@@ -293,6 +293,7 @@ body {
     border-bottom: solid 1px;
     font-size: 18px;
     font-family: Moon;
+    font-weight: bold;
     color: #fff; }
   .nrelease-detail p:nth-child(2) {
     font-family: 'Open Sans',sans-serif;
@@ -310,7 +311,8 @@ body {
     margin-right: 14px; }
 
 .gender-select {
-  padding: 2px; }
+  padding: 2px;
+  background: #fff; }
   .gender-select .gender-chc {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -334,12 +336,11 @@ body {
   transition: all 0.4s; }
   .shop-adjust:hover {
     background: #000;
-    color: #fff;
-    text-decoration: none; }
+    color: #fff; }
 
 .gender-male {
-  border: solid 1px #fff;
-  background: url("/front/public/img/male.jpg");
+  border: solid 1px;
+  background: #fff;
   background-size: cover;
   filter: grayscale;
   -webkit-filter: grayscale(100%);
@@ -347,15 +348,10 @@ body {
   .gender-male:hover {
     cursor: pointer;
     -webkit-filter: grayscale(0%); }
-    .gender-male:hover .shop-adjust {
-      background: #111;
-      color: #fff; }
-    .gender-male:hover .gender-desc {
-      color: #fff; }
 
 .gender-female {
-  border: solid 1px #fff;
-  background: url("/front/public/img/shemale.jpg") 50% 64% no-repeat;
+  border: solid 1px;
+  background: #fff;
   background-size: cover;
   image-resolution: normal;
   filter: grayscale;
@@ -366,57 +362,5 @@ body {
   .gender-female:hover {
     cursor: pointer;
     -webkit-filter: grayscale(0%); }
-    .gender-female:hover .gender-desc {
-      color: #111; }
-    .gender-female:hover .shop-adjust {
-      background: #111;
-      color: #fff; }
-
-/**fashion statements**/
-.fs-div {
-  height: 300px;
-  display: inline-flex;
-  display: flex; }
-  .fs-div .fs-div-a {
-    flex: 1 8 70%;
-    width: 100%; }
-  .fs-div div:nth-child(2) {
-    flex: 1 8 70%;
-    height: 100%; }
-
-.fs-state {
-  position: relative;
-  height: 100px;
-  top: 220px; }
-
-.p-fashion {
-  font-size: 62px;
-  font-family: Coves;
-  padding-left: 68px; }
-
-.p-quote {
-  position: relative;
-  padding-left: 68px;
-  font-family: 'Open Sans',sans-serif;
-  font-size: 16px;
-  top: -10px;
-  width: 90%; }
-
-.fs-state-a {
-  position: relative;
-  top: 170px; }
-  .fs-state-a ul {
-    height: 100%;
-    list-style: none; }
-    .fs-state-a ul li {
-      margin: 0;
-      display: inline-block;
-      width: 120px;
-      height: 106px;
-      margin-right: 6px;
-      border: solid 1px #dddada;
-      margin-top: 2px; }
-      .fs-state-a ul li:hover {
-        border-color: #111; }
 
 /*# sourceMappingURL=main-style.css.map */

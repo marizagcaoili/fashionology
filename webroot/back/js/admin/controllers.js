@@ -307,18 +307,28 @@ app.controller('ItemListController', function($scope, $http) {
 	};
 	ItemList.init();
 	// scope Vars to view
-	$scope.var = "";
+	$scope.deleteItem = function (item_id) {
+		$http.get("/")
+		.then(function(response) {
+
+		})
+	};
 	// scope function to view
 
 });
 
 
 app.controller('EditItemController', ["$location", "$scope", "$http", function($location, $scope, $http) {
-	
+    $scope.$watch('categoryid', function(val) {
+        if (val) {
+            console.log(val);
+        }
+    });
 	var EditItem = {};
 	EditItem.init = function() {
 		// Init functions / source
 		EditItem.parameter();
+	
 
 	};
 
@@ -335,15 +345,36 @@ app.controller('EditItemController', ["$location", "$scope", "$http", function($
 			headers: {'Content-Type': 'application/x-www-form-urlencoded'},
 			params : { item_id : item_id }
 		}).then(function(response) {
-			$scope.details = response.data;
+			$scope.details = response.data.item[0];
+			$scope.top_category = response.data.top_parent_category;
+			$scope.parent_category = response.data.parent_category;
+
+			$('#summernote').summernote('code', $scope.details.item_description);
+
+			console.log($scope.details);
+			console.log($scope.top_category);
+			console.log($scope.parent_category);
 		});
 	};
 
+	// EditItem.secondCategory = function (category_id){
+	// 	console.log(angular.element('#categoryid').val());
+	// 	$http.get("/admin/catalog/get_categorydetails",
+	// 	{
+	// 		headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+	// 		params : { category_id : category_id }
 
+	// 	}).then(function(response) {
+	// 		$scope.categories = response.data;
+	// 		console.log($scope.categories);
+	// 	});
+
+	// };
 
 	EditItem.init();
+
+
 	// scope Vars to view
-	$scope.var = "";
 	// scope function to view
 
 }]);
@@ -355,7 +386,7 @@ app.controller('EditItemController', ["$location", "$scope", "$http", function($
 // 	};
 // 	Test.init();
 // 	// scope Vars to view
-// 	$scope.var = "";
+// 	$scope.var = "";0
 // 	// scope function to view
 // 	$scope.func = function(){
 // 	};

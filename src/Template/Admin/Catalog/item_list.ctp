@@ -154,7 +154,7 @@
                     <td>{{item.item_srp}}.00</td>
                     <td>No Image Available</td>
                     <td><a href="/admin/catalog/edit_item?item_id={{item.item_id}}"><button type="submit" class= "btn bg-primary btn-flat" name=""><i class="fa fa-pencil"> </i></button></a></td>
-                    <td><a href="/admin/catalog/edit_item?item_id={{item.item_id}}"><button type="submit" ng-click="deleteItem(item.item_id)" class= "btn bg-red btn-flat" name=""><i class="fa fa-trash"> </i></button></a></td>
+                    <td><button type="submit" ng-click="deleteItem(item.item_id)" class= "btn bg-red btn-flat" name=""><i class="fa fa-trash"> </i></button></td>
                   </tr>
                 </tbody>
               </table>

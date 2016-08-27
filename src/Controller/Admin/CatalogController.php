@@ -64,6 +64,23 @@ class CatalogController extends Controller
         echo json_encode($result);
         exit(); 
     }
+
+    public function getCategoryDetails()
+    {
+        $this->autoRender = false;
+        header('Content-Type: application/json');
+
+        $categories = TableRegistry::get('Categories');
+
+        $categ_id = $this->request->query('category_id');
+
+        $result = $categories->getCatDetails($categ_id);
+
+        echo json_encode($result);
+
+        exit();
+    } 
+
     
     public function addItem()
     {
@@ -95,12 +112,18 @@ class CatalogController extends Controller
         header('Content-Type: application/json');
 
         $item = TableRegistry::get('Items');
+        $category = TableRegistry::get('Categories');
 
         $item_id = $this->request->query('item_id');
        
         $details = $item->getDetails($item_id);
 
-        echo json_encode($details);
+        $response['item'] = $details;
+
+        $response['parent_category'] = $category->getCatDetails($details[0]['category']['parent_id']);
+        $response['top_parent_category'] = $category->getCatDetails($details[0]['category']['top_parent']);
+
+        echo json_encode($response);
         exit();
 
     }
@@ -112,6 +135,21 @@ class CatalogController extends Controller
     public function itemForm()
     {
         $this->render('add_item');
+    }
+
+    public function deleteItem()
+    {
+        $this->autoRender = false;
+        
+        header('Content-Type: application/json');
+
+        $category= TableRegistry::get('Items');
+        
+        $item_id=$this->request->data('item_id');
+        
+        $this->$category->delete($item_id);
+
+        exit();
     }
 
 
@@ -279,7 +317,3 @@ class CatalogController extends Controller
 
     //display
 }
-
-
-
-?>

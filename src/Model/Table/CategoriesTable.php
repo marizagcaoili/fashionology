@@ -43,6 +43,13 @@ class CategoriesTable extends Table
                     ->toArray();
     }
 
+    public function getCatDetails($category)
+    {
+        return $this->find()
+                    ->select(['category_name', 'parent_id', 'top_parent'])
+                    ->where(['category_id'=>$category])
+                    ->toArray();
+    }
 
     public function insertCategory($name, $parent, $top)
     {
@@ -51,6 +58,7 @@ class CategoriesTable extends Table
                     ->values(['category_name'=>$name, 'parent_id'=>$parent, 'top_parent'=>$top])
                     ->execute();
     }
+
 
 }
 

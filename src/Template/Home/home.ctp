@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fashionology PH</title>
+	<title></title>
 
 
 
@@ -25,7 +25,7 @@
 
 
 </head>
-<body class="index-page" id='skrollr-body'>
+<body class="index-page">
 
     <header class="masthead">	
         <img src="/front/public/img/logo.png" class="logo">
@@ -41,8 +41,8 @@
 
        <nav class="nav-b">
         <ul>
-           <a href="/user/login"><li>login</li></a>
-           <a href="/register" class="sign-up" ><li>sign up</li></a>
+           <a href="#"><li>login</li></a>
+           <a href="#" class="sign-up" ><li>sign up</li></a>
            <a href="#"><li><i class="fa fa-search" aria-hidden="true"></i></li></a>
            <a href="#"><li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li></a>
            
@@ -76,13 +76,13 @@
 
 <main class="main-container container_14"  >
 
-    <div class="flex-container"  data-0="opacity:1;" data-70="opacity:0.3;" data-center='opacity:1;'>
+    <div class="flex-container">
         <div class="cover" style="background:url('/front/public/img/bg.jpg');
         background-size:cover;">
         <!--intro-->
-        <article class="cover-front"  >
-            <h1 style="color:#111;">It feels brand new!</h1>
-            <p style="color:#000;font-size:16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem nunc, mollis ac fermentum a, porta et turpis. Vestibulum accumsan ligula vitae posuere faucibus. Morbi dignissim aliquam justo. Mauris porta lectus vel lectus hendrerit, id accumsan massa iaculis. Quisque quam ante, rhoncus et neque in, lobortis interdum ante. Fusce eget ultrices ligula. 
+        <article class="cover-front" >
+            <h1 style="color:000;">It feels brand new!</h1>
+            <p style="color:#000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem nunc, mollis ac fermentum a, porta et turpis. Vestibulum accumsan ligula vitae posuere faucibus. Morbi dignissim aliquam justo. Mauris porta lectus vel lectus hendrerit, id accumsan massa iaculis. Quisque quam ante, rhoncus et neque in, lobortis interdum ante. Fusce eget ultrices ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
             </p>
 
             <a href="#" class="shop-now">Shop Now</a>
@@ -93,7 +93,7 @@
 
         <div >
             <div style="width:490px;float:right;
-            margin-right: 230px;padding:0;margin-top:-140px;" >
+            margin-right: 226px;padding:0;margin-top:-140px;" >
             <div  id="carousel">
                 <div >
                     <div >
@@ -114,7 +114,7 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" >
                                         <div class="item active">
-                                            <img src="/front/public/img/onsale.jpg" alt="Awesome Image">
+                                            <img src="/front/public/img/mouthwash.jpg" alt="Awesome Image">
                                             <div class="carousel-caption">
                                             </div>
                                         </div>
@@ -156,132 +156,268 @@
 
 </div>
 
-<div class="wrapper" data-70="opacity:0.3;" data-center='opacity:1;'>
-    
+<div class="wrapper">
+    <section class="left-sec">
+        <!--new release-->
+        <div style="position:absolute;width:144px;height:36px;margin-top: 10px;left:16px;border:none;border-left:solid 14px #333;
+        -webkit-box-shadow: 4px 4px 40px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 40px -10px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 40px -10px rgba(0,0,0,0.75);
+        background: rgba(255,255,255,0.9);">
+
+        <p class="new-release-p">New Releases</p>
+    </div>
+
+    <div class="wrapper">
+        <section >
+            <!--new releases section-->
+
+            <div class="nrelease-detail" style="width:254px;
+            height:118px;border:none;">
+            <p>Very Nice Detail</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>  
+
+            <ul class='nrelease-menu-ul' style="border:none;">
+
+                <a href="#" ><li><p style="color:#fff;font-size: 28px;border:none;" ><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
 
 
-    <div class='fs-div'>
-        <div class='fs-div-a'>
-            <div class='fs-state' style='height:100px;'>
-            <p class='p-fashion'>Featured this Week.</p>
-            <p class='p-quote'>Get in touch with the latest item of fashionology each of the week. Providing a high affordable clothing across the globe. Over hundreds of fashion enthusiasts!</p>
-            </div>
-        </div>
+                <a><li><p style="color:#fff;font-size: 28px;border:none;" ><i class="fa fa-cart-plus" aria-hidden="true"></i></p></li></a>
 
-        <div>
-            
-            <div class='fs-state-a' style='height:100px;
-            width:90%;margin:0 auto;'>
-
-
-            <ul>
-            <li>
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/b.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/d.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/h.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/3.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/1.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/c.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/f.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/d.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-                 <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/h.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/bag1.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/1.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            <li>
-                
-               <div style='position: absolute;width:120px;
-               height:106px;'>
-               <img src='/front/public/img/b.jpg' style='width:118px;height:104px;'>
-               </div>
-            </li>
-            
-           
             </ul>
-
-
-            </div>
-
         </div>
+
+
+
+        <figure class="new-release">
+
+            <img src="/front/public/img/3.jpg">
+        </figure>
+
+
+    </section>
+
+    <section >
+
+
+
+        <figure class="new-release" >
+            <img  src="/front/public/img/glittergold.jpg">
+        </figure>
+
+
+
+    </section>
+
+</div>
+<!--item this week-->
+
+<div class="thisweek">
+    <figure>
+        <img src="/front/public/img/1.jpg">
+    </figure>
+
+    <div style="position: absolute;width:328px;height:222px;border:none;
+    margin-top:44px;left:324px;">
+
+    <p class="title-release">Good Idea</p>
+    <p class="desc-release">Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit consectetur adipiscing elit consectetur consectetur.adipiscing elit consectetur adipiscing elit consectetur consectetur.</p>
+    <p class="price-release"></p>
+
+    <ul class='menu-ul'>
+    <a href="#" ><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+        <li><p><i class="fa fa-cart-plus" aria-hidden="true"></i></p></li>
+
+    </ul>
+</div>                  
+</div>
+</section>
+<section class="wrapper-a">
+
+    <div class="wrapper">
+
+        <div style="position:absolute;
+        width:20px;height:36px;margin-top: 10px;margin-left:8px;border:none;
+        border-left: solid 14px #333;width:144px;
+        background: rgba(255,2555,255,0.8);
+        -webkit-box-shadow: 4px 4px 40px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 40px -10px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 40px -10px rgba(0,0,0,0.75);">
+
+        <p class="new-release-p">This Week</p>
 
 
     </div>
 
+    <div class="bg-six">
+
+
+        <figure class="top-six">
+            <img src="/front/public/img/checked.jpg">
+        </figure>
+
+        <span class="desc-six">
+            <p>ITEM A</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        </span>
+        <span class="desc-six-sub">
+            <p style="color:#333;">P 124.00</p>
+        </span>
+
+        <span class="desc-six-sub-a">
+            <ul>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li><p>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </p></li></a>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+            </ul>
+        </span>
+
+    </div>
+    <div class="bg-six">
+        <figure class="top-six">
+            <img src="/front/public/img/glittergold.jpg">
+        </figure>
+
+
+        <span class="desc-six">
+            <p>ITEM B</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </span>
+        <span class="desc-six-sub">
+            <p  style="color:#333;">P 120.00</p>
+        </span>
+
+        <span class="desc-six-sub-a">
+            <ul>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li><p>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </p></li></a>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist   " data-container="body"><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+            </ul>
+        </span>
+
+
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <div>
+        <figure class="top-six">
+            <img src="/front/public/img/a.jpg">
+        </figure>
+
+
+        <span class="desc-six">
+            <p>ITEM C</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </span>
+        <span class="desc-six-sub">
+            <p>P 120.00</p>
+        </span>
+
+        <span class="desc-six-sub-a">
+            <ul>
+                <a href="#"><li><p>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </p></li></a>
+                <a href="#"><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+            </ul>
+        </span>
+
+    </div>
+    <div>
+        <figure class="top-six">
+            <img src="/front/public/img/b.jpg">
+        </figure>
+
+
+        <span class="desc-six">
+            <p>ITEM D</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </span>
+        <span class="desc-six-sub">
+            <p>P 128.00</p>
+        </span>
+
+        <span class="desc-six-sub-a">
+            <ul>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li><p>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </p></li></a>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+            </ul>
+        </span>
+
+    </div>
+</div>
+
+<div class="wrapper">
+        <div class="bg-six">
+
+
+        <figure class="top-six">
+            <img src="/front/public/img/checked.jpg">
+        </figure>
+
+        <span class="desc-six">
+            <p>ITEM A</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        </span>
+        <span class="desc-six-sub">
+            <p style="color:#333;">P 124.00</p>
+        </span>
+
+        <span class="desc-six-sub-a">
+            <ul>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li><p>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </p></li></a>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" data-container="body"><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+            </ul>
+        </span>
+
+    </div>
+    <div class="bg-six">
+        <figure class="top-six">
+            <img src="/front/public/img/glittergold.jpg">
+        </figure>
+
+
+        <span class="desc-six">
+            <p>ITEM B</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </span>
+        <span class="desc-six-sub">
+            <p  style="color:#333;">P 120.00</p>
+        </span>
+
+        <span class="desc-six-sub-a">
+            <ul>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-container="body"><li><p>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </p></li></a>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist   " data-container="body"><li><p><i class="fa fa-heart-o" aria-hidden="true"></i></p></li></a>
+            </ul>
+        </span>
+
+
+    </div>
+
+    
+</div>
 
 
 
-
-
-
-
+</section>
 </div>
 <!--men and women-->
-<div class="wrapper" style="border:solid 1px #fff;" data-0='opacity:0.6;' data-10='opacity:1;'>
+<div class="wrapper" style="border:solid 1px;">
 
-    <section style="border:solid 1px #fff;" class="gender-male">
+    <section style="border:solid 1px;" class="gender-male">
         <div class="gender-select" style="position: absolute;width:540px;height:430px;
         margin-left:56px;margin-top:105px;">
 
@@ -291,7 +427,7 @@
 
     </div>
 </section>
-<section style="border:solid 1px #fff;" class="gender-female">
+<section style="border:solid 1px;" class="gender-female">
     <div class="gender-select" style="position: absolute;width:540px;height:430px;
     margin-left:68px;margin-top:105px;">
     <p class="gender-chc">Women</p>
@@ -318,7 +454,6 @@
 <script src="/front/assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="/front/assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/front/assets/js/material.min.js"></script>
-<script src="/front/public/js/skrollr.min.js"></script>
 
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 <script src="/front/assets/js/nouislider.min.js" type="text/javascript"></script>
@@ -343,8 +478,6 @@
             }
 
         });
-
-
     </script>
 
 

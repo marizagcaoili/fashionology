@@ -1,4 +1,4 @@
-
+  $(function () {
   $('#summernote').summernote();
 
 
@@ -35,3 +35,4 @@
     focus: false,
     placeholder: 'Item Description',                // set focus to editable area after initializing summernote
   });
+});

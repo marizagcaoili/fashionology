@@ -1,38 +1,35 @@
 <!doctype html>
-<html >
-  <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.js"></script>
-    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.1.0-SNAPSHOT.js"></script>
-  
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="/front/public/js/angular.min.js" /></script>
+	<link rel="stylesheet" href="">
 
 
-   	<script>
-   		angular.module('plunker', ['ui.bootstrap']);
+	<script src="/front/angular/app.js" /></script>
+	
+	<script src="/front/angular/controllers.js" /></script>
+
+</head>
+<body ng-controller="testController" ng-app="SampleApp">
+	
 
 
+	<div>
 
-var TooltipDemoCtrl = function ($scope) {
-  
-  $scope.items = [ 
-    {name: 'foo'},
-    {name: 'bar'},
-    {name: 'baz'}
-  ];
-  
-};
+		<table>
+			<tr ng-repeat="item in items">
+				<td>{{item.item_id}}</td>
+				<td>{{item.item_name}}</td>
+				<td>{{item.item_description}}</td>
+			</tr>
+		</table>
 
-   	</script>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  </head>
-  <body ng-app="plunker">
+	</div>
 
-<div ng-controller="TooltipDemoCtrl">
-  
-    <ul>
-      <li ng-repeat="item in items"><span tooltip="On the Right!" tooltip-placement="right">{{item.name}}</span></li>
-    </ul>  
-      
-</div>
 
-  </body>
+</body>
 </html>

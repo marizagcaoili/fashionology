@@ -132,15 +132,15 @@
                               <input type="hidden" name="brand_prefix" id="brandPrefix" ng-repeat="prefix in prefixes" class="form-control" value={{prefix.brand_prefix}}>
 
                               <span class="input-group-addon" ng-repeat="prefix in prefixes">{{prefix.brand_prefix}}</span>
-                              <input type="text" name="item_code" ng-repeat="detail in details" id="itemCode" class="form-control" placeholder="Item Code" value= {{detail.item_code}} aria-describedby="item-code" >
+                              <input type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.item_code}} aria-describedby="item-code" >
                           </div>
                       </div>
 
                       <div class="form-group row">
                           <label for="brand" class="col-xs-3 col-form-label">Brand</label>
                            <div class="input-group col-xs-9">
-                                <select name= "brand" id="brand" ng-model="selectedBrand" ng-options="brand as brand.brand_name for brand in brands track by brand.brand_id" class="form-control" ng-change="getPrefix()" placeholder="Brand"  aria-describedby="brand">
-                                </select>
+                                 <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.brand.brand_name}} aria-describedby="item-code" >
+                                 <button data-toggle="tooltip" data-placement="bottom" title="Change Brand" class="btn btn-flat col-xs-12"><i class="fa fa-exchange"></i></button>
                             </div>
                       </div>
                       </div>
@@ -153,10 +153,8 @@
                             <div class="form-group row">
                                 <label for="status" class="col-xs-3 col-form-label">Status</label>  
                                 <div class="input-group col-xs-9">
-                                  <select name="status" id= "status" class="form-control" aria-describedby="status">
-                                  <option>Enabled</option>
-                                  <option>Disabled</option>
-                                  </select>
+                                    <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.item_status}} aria-describedby="item-code" >
+                                    <button data-toggle="tooltip" data-placement="bottom" title="Change Status" class="btn btn-flat col-xs-12"><i class="fa fa-exchange"></i></button>
                                 </div>   
                       
                             </div>
@@ -172,14 +170,14 @@
                                   <label for="item-name" class="col-xs-3 col-form-label">Item Name</label>   
                                    <div class="input-group col-xs-9">
             
-                                        <input ng-repeat="detail in details" value= {{detail.item_name}} name="item_name" id="itemName" type="text" class="form-control" placeholder="Item Name" aria-describedby="item-code">
+                                        <input value= {{details.item_name}} name="item_name" id="itemName" type="text" class="form-control" placeholder="Item Name" aria-describedby="item-code">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="brand" class="col-xs-3 col-form-label">Quantity</label>
                                      <div class="input-group col-xs-9">
-                                          <input name="quantity" id="quantity"  ng-repeat="detail in details" value= {{detail.item_quantity}}  type="number" class="form-control" placeholder="Quantity" aria-describedby="item-code">
+                                          <input name="quantity" id="quantity" value= {{details.item_quantity}}  type="number" class="form-control" placeholder="Quantity" aria-describedby="item-code">
                                       </div>
                                 </div>
 
@@ -187,7 +185,7 @@
                                     <label for="brand" class="col-xs-3 col-form-label">SRP</label>
                                      <div class="input-group col-xs-9">
                                           <span class="input-group-addon" id="double">PHP</span>
-                                          <input name= "srp" id="srp"  ng-repeat="detail in details" value= {{detail.item_srp}} type="number" class="form-control" placeholder="SRP" aria-describedby="double">
+                                          <input name= "srp" id="srp" value= {{details.item_srp}} type="number" class="form-control" placeholder="SRP" aria-describedby="double">
                                           <span class="input-group-addon" id="double">.00</span>
                                       </div>
                                 </div>
@@ -196,17 +194,13 @@
                               <div class="col-xs-6">
                                 <div class="form-group row">
                                     <label for="category" class="col-xs-3 col-form-label">Category</label>
-                                       <div class="input-group col-xs-9">
-                                            <select id="category1" class="form-control" ng-model="selectedCategory" ng-options="firstCategory as firstCategory.category_name for firstCategory in firstCategories track by firstCategory.category_id" ng-change="firstCategory()"  aria-describedby="category">
-                                            </select>
-                                          
-                                             <select id="category2" class="form-control" ng-model="selectedCategory2" ng-options="secondCategory as secondCategory.category_name for secondCategory in secondCategories track by secondCategory.category_id" ng-change="secondCategory()"  aria-describedby="category">
-                                            </select>
-
-                                             <select id="category3" class="form-control" ng-model="thirdCategory" ng-options="thirdCategory as thirdCategory.category_name for thirdCategory in thirdCategories track by thirdCategory.category_id"  aria-describedby="category">
-                                            </select>
-
-                                        </div>
+                                     <div class="input-group col-xs-9">
+                                           <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.category.category_id}} aria-describedby="item-code" >
+                                      
+                                            <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.brand.brand_name}} aria-describedby="item-code" >
+                                           <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.brand.brand_name}} aria-describedby="item-code" >
+                                           <button data-toggle="tooltip" data-placement="bottom" title="Change Brand" class="btn btn-flat col-xs-12"><i class="fa fa-exchange"></i></button>
+                                      </div>
                                 </div>
 
 
@@ -219,11 +213,11 @@
                         <fieldset class="form-group">
                           <legend><h4>Description</h4></legend>
 
-                              <div class="form-group row" ng-repeat="detail in details">
+                              <div class="form-group row">
                                   
                                   <label for="item-name" class="col-xs-2 col-form-label">Item Description</label>   
                                     <div class="col-xs-10">
-                                     <div name="description" id="summernote">{{detail.item_description}}</div>
+                                     <div name="description" id="summernote">{{details.item_description}}</div>
                                     </div>
                                 </div>
 

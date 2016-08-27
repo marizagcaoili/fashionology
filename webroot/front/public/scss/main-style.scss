@@ -37,33 +37,33 @@ body{
 			text-decoration: none;
 			font-weight: bold;
 		// /	text-transform: lowercase;
-		color:#333;
-	}
-}
-
-.nav-b{
-	z-index:1;
-	position: relative;
-	left:38%;
-	top:14px;
-	ul{
-		list-style: none;
-		li{
-			display: inline;
+			color:#333;
 		}
 	}
 
-	a{
-		font-family:Coves;
-		padding:4px 12px;
-		font-size: 20px;
-		margin-right: 6px;
-		text-decoration: none;
-		font-weight: bold;
-		text-transform: lowercase;
-		color:#fff;
+	.nav-b{
+		z-index:1;
+		position: relative;
+		left:38%;
+		top:14px;
+		ul{
+			list-style: none;
+			li{
+				display: inline;
+			}
+		}
+
+		a{
+			font-family:Coves;
+			padding:4px 12px;
+			font-size: 20px;
+			margin-right: 6px;
+			text-decoration: none;
+			font-weight: bold;
+			text-transform: lowercase;
+			color:#fff;
+		}
 	}
-}
 }
 
 
@@ -76,7 +76,7 @@ body{
 
 	margin-top:12px;
 	left:84px;image-resolution:normal;
-}
+	}
 .sub-nav{
 	position:relative;
 	top:12px;
@@ -135,7 +135,6 @@ height: 672px;
 	display:inline-flex;
 	flex-direction:column;
 	border:solid 1px #fff;
-	
 	div{
 		flex: 1 8 70%;
 		width: 100%;
@@ -182,7 +181,8 @@ height: 672px;
 }
 
 .shop-now{
-	border:solid 1px;
+	border:solid 2px;
+
 	position: relative;
 	top:48px;
 	padding:10px 22px 10px;
@@ -202,48 +202,46 @@ height: 672px;
 }
 
 .cover{
-	background-size:cover;	
-	opacity: 1;
+		background-size:cover;	
+		opacity: 1;
 
-}
-
-.new-release{margin:0;height:100%;
-	img{width:100%;height:100%;image-resolution:normal;}}
-
-	.thisweek{figure{position:absolute;margin:0;width:276px;height:224px;margin-top:44px;left:20px;
-		img{width:100%;height:100%;}}
 	}
 
-	.desc-six{box-sizing:border-box;
-		margin-left:175px;width:156px;
-		position:absolute;margin-top:-159px;height:80px;
+	.new-release{margin:0;height:100%;
+		img{width:100%;height:100%;image-resolution:normal;}}
 
-		p{
-			margin:0;
+		.thisweek{figure{position:absolute;margin:0;width:276px;height:224px;margin-top:44px;left:20px;
+			img{width:100%;height:100%;}}}
 
-			font-family: Coves;
-			font-size:18px;
-		}
-		p:nth-child(2){
-			font-family: 'Open Sans',sans-serif;
-			font-weight: normal;
-			font-size: 12px;
-			text-overflow: ellipsis;
-			overflow: hidden;}}
-
-			.desc-six-sub-a{
-				box-sizing:border-box;
-				margin-left:174px;width:156px;
-				position:absolute;
-				margin-top:-30px;
-				height:30px;
-
-				ul{
-					list-style: none;
+			.desc-six{box-sizing:border-box;
+				margin-left:175px;width:156px;
+				position:absolute;margin-top:-159px;height:80px;
+				
+				p{
 					margin:0;
-					padding-left:72px;
-					margin-top: -4px;
-					li{
+
+					font-family: Moon;
+					font-weight:bold;
+					font-size:18px;
+				}
+				p:nth-child(2){
+					font-family: 'Open Sans',sans-serif;
+					font-weight: normal;
+					font-size: 12px;
+					text-overflow: ellipsis;
+					overflow: hidden;}}
+
+					.desc-six-sub-a{
+						box-sizing:border-box;
+						margin-left:174px;width:156px;
+						position:absolute;margin-top:-30px;height:30px;
+						
+						ul{
+							list-style: none;
+							margin:0;
+							padding-left:72px;
+							margin-top: -4px;
+							li{
 							//border:solid 1px;
 							display: inline-block;
 							margin-right: 0px;
@@ -283,11 +281,9 @@ height: 672px;
 									margin-top:7px;
 									font-size:16px;
 									font-weight:bold;
-
 								}
 								.bg-six{
-									background:#fff;
-									padding:2px;
+									background:#f3f2f2;
 								}
 								.title-release{margin:0;
 									font-size:26px;
@@ -316,7 +312,6 @@ li{
 		}
 	}
 }
-
 .price-release{
 	margin:0;
 //	border:solid 1px;
@@ -339,6 +334,7 @@ font-weight:400;
 		border-bottom:solid 1px;
 		font-size:18px;
 		font-family: Moon;
+		font-weight:bold;
 		color:#fff;
 	}
 	p:nth-child(2){
@@ -362,7 +358,8 @@ font-weight:400;
 		}
 		.gender-select{
 			padding:2px;
-
+			background:#fff;
+			
 
 			.gender-chc{
 				text-align:center;
@@ -392,123 +389,36 @@ font-weight:400;
 			&:hover{
 				background:#000;
 				color: #fff;
-				text-decoration:none;
 			}
 		}
 		.gender-male{
-			border:solid 1px #fff;
-			background:url("/front/public/img/male.jpg");
-			background-size:cover;
-			filter:grayscale;
-			-webkit-filter: grayscale(100%);
-			transition: all 0.4s;
-			&:hover{
-				cursor: pointer;
-				-webkit-filter: grayscale(0%);
+			border:solid 1px;
+		  //background:url("../public/img/male.jpg");
+		  background:#fff;
+		  background-size:cover;
+		  filter:grayscale;
+		  -webkit-filter: grayscale(100%);
+		  transition: all 0.4s;
+		  &:hover{
+		  	cursor: pointer;
+		  	-webkit-filter: grayscale(0%);
 
-
-
-				.shop-adjust{
-					background:#111;
-					color:#fff;
-				}
-
-				.gender-desc{
-					color:#fff;
-				}
-			}
+		  }
 		}
 		.gender-female{
-			border:solid 1px #fff;
-			background:url("/front/public/img/shemale.jpg") 50% 64% no-repeat;
-			background-size:cover;
-			image-resolution:normal;
-			filter:grayscale;
-			-webkit-filter: grayscale(100%);
-			transition: all 0.4s;
-			&:hover{
-				cursor: pointer;
-				-webkit-filter: grayscale(0%);
-
-
-				.gender-desc{
-					color:#111;
-				}
-
-				.shop-adjust{
-					background:#111;
-					color:#fff;
-				}
-			}
-
-			filter:gray;
-			-webkit-filter: grayscale(100%);
+			border:solid 1px;
+		//	background:url("../public/img/female.jpg") 50% 64% no-repeat;
+		background:#fff;	
+		background-size:cover;
+		image-resolution:normal;
+		filter:grayscale;
+		-webkit-filter: grayscale(100%);
+		transition: all 0.4s;
+		&:hover{
+			cursor: pointer;
+			-webkit-filter: grayscale(0%);
 		}
 
-
-
-		/**fashion statements**/
-		.fs-div{
-			height:300px;
-			display:inline-flex;
-			display:flex;
-
-
-			.fs-div-a{
-				flex: 1 8 70%;
-				width: 100%;
-			}
-
-			div:nth-child(2){
-				flex: 1 8 70%;
-				height:100%;
-			}
-		}
-
-
-.fs-state{
-	position:relative;
-	height:100px;
-	top:220px;
-
-	
-}
-
-.p-fashion{
-		font-size: 62px;
-		font-family: Coves;
-		padding-left:68px;
-
-}
-.p-quote{
-	position:relative;
-	padding-left:68px;
-	font-family: 'Open Sans',sans-serif;
-	font-size:16px;
-	top:-10px;
-	width:90%;
-}
-
-.fs-state-a{
-	position:relative;
-	top:170px;
-
-	ul{
-		height:100%;
-		list-style: none;
-		li{
-			margin:0;
-			display: inline-block;
-			width:120px;
-			height:106px;
-			margin-right: 6px;
-			border:solid 1px #dddada;
-			margin-top: 2px;
-		
-			&:hover{
-				border-color:#111;
-			}
-		}
-
+		filter:gray;
+		-webkit-filter: grayscale(100%);
 	}
-}

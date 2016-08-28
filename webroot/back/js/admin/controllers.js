@@ -1,15 +1,19 @@
-var app = angular.module('admin.controllers', ['ngRoute', 'ngFileUpload']);
+var app = angular.module('admin.controllers', ['ngRoute', 'ngFileUpload', 'frapontillo.bootstrap-switch']);
 
 app.config(function($locationProvider) {
         $locationProvider.html5Mode(true);
     }); 
 
-app.controller('BrandController', function($scope, $http) {
+app.controller('BrandController', function($scope, $http, $timeout) {
 	// Private
 	// JS ONLY
 	var Brand = {};
 	Brand.init = function() {
 		Brand.list();
+
+		$timeout(function () {
+	       $scope.canChange = true;
+	    }, 1000);
 	};
 	Brand.list = function() {
 		$http.get("/admin/catalog/get_brands")
@@ -39,7 +43,24 @@ app.controller('BrandController', function($scope, $http) {
 		        Brand.list();
 		    });
 	};
+
 	Brand.init(); 
+
+    $scope.onText = 'Visible';
+    $scope.offText = 'Hidden';
+    $scope.isActive = true;
+    $scope.size = 'mini';
+    $scope.animate = true;
+    $scope.radioOff = true;
+    $scope.handleWidth = "auto";
+    $scope.labelWidth = "auto";
+    $scope.inverse = false;
+    $scope.canChange = false;
+
+    $scope.brand_id = '';
+	$scope.brand_name = '';
+	$scope.brand_prefix = '';
+
 	// Public
 	// Will be exposed to view
 	$scope.add = function() {
@@ -47,23 +68,87 @@ app.controller('BrandController', function($scope, $http) {
 		var prefix = $('#brand_prefix').val(); 
 		Brand.add(name, prefix);
 	};
+
+	$scope.editBrand = function(brand_id, brand_name, brand_prefix) {
+		$scope.brand_id = brand_id;
+		$scope.brand_name = brand_name;
+		$scope.brand_prefix = brand_prefix;
+	};
+
+	$scope.toggle = function(brand_id, status) {
+		if($scope.canChange) {
+      		$http({
+				url : "/admin/catalog/update_brand_status",
+				method: "POST",
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+			    transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    },
+				data : 	{brand_id : brand_id, status : status} // Data to be passed to API
+			})
+		    .then(function(response) {
+		    	
+		    });
+		}
+    };
+
+    $scope.update = function() {
+    	$http({
+			url : "/admin/catalog/update_brand",
+			method: "POST",
+			headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+		    transformRequest: function(obj) {
+		        var str = [];
+		        for(var p in obj)
+		        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+		        return str.join("&");
+		    },
+			data : 	{brand_id : $scope.brand_id, brand_name : $scope.brand_name, brand_prefix : $scope.brand_prefix} // Data to be passed to API
+		})
+	    .then(function(response) {
+	    	$('#update-modal-close').click();
+		    Brand.list();
+	    });
+    }
 });
 
-app.controller('CategoryController', function($scope, $http) {
+app.controller('CategoryController', function($scope, $http, $timeout) {
 	
 	var Category= {};
 	
 	$scope.categories="";	
 	$scope.parent_id=0;
 	$scope.top_parent=0;
+	$scope.category_id = 0;
+    $scope.category_name = "";
+
+	$scope.onText = 'Visible';
+    $scope.offText = 'Hidden';
+    $scope.isActive = true;
+    $scope.size = 'mini';
+    $scope.animate = true;
+    $scope.radioOff = true;
+    $scope.handleWidth = "auto";
+    $scope.labelWidth = "auto";
+    $scope.inverse = false;
+    $scope.canChange = false;
+
 	Category.init = function() {
 		Category.list();
 		Category.parent();
+
+		$timeout(function () {
+	       $scope.canChange = true;
+	    }, 1000);
 	};
 	Category.list = function() {
 		$http.get("/admin/catalog/get_categories")
 		    .then(function(response) {
 		        $scope.categories = response.data;
+		        console.log(response.data);
 		    });
 	};	
 	Category.parent= function() {
@@ -164,8 +249,103 @@ app.controller('CategoryController', function($scope, $http) {
 		$('#group1').val('');
 		$scope.secondGroups="";
 		Category.list();
-	}
+	};
+
+	$scope.toggle = function(category_id, status) {
+		if($scope.canChange) {
+      		$http({
+				url : "/admin/catalog/update_category_status",
+				method: "POST",
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+			    transformRequest: function(obj) {
+			        var str = [];
+			        for(var p in obj)
+			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+			        return str.join("&");
+			    },
+				data : 	{category_id : category_id, status : status} // Data to be passed to API
+			})
+		    .then(function(response) {
+		    	
+		    });
+		}
+    };
 	
+	$scope.editCategory = function(category_id, category_name, top_parent, parent_id) {
+		$scope.parent_id = 0;
+		$scope.top_parent = 0;
+		$scope.category_id = category_id;
+	    $scope.category_name = "";
+	    $scope.firstSelected = [];
+	    $scope.secondSelected = [];
+	    $scope.secondcategories = [];
+	    $scope.level = 0;
+
+	    // First 
+	    if(parent_id == 0 && top_parent == 0) {
+	    	$scope.category_name = category_name;
+	    	$scope.level = 1
+	    }
+
+	    // Second
+	    if(parent_id != 0 && top_parent != 0 && top_parent == parent_id) {
+	    	$scope.category_name = category_name;
+	    	$scope.level = 2
+
+	    	angular.forEach($scope.parents, function(value, key) {
+			  if(top_parent == value.category_id) {
+			  	$scope.firstSelected = value;
+			  	$scope.top_parent = top_parent;
+			  }
+			});
+
+			$scope.getparent();
+	    }
+
+	    // Third
+		if(parent_id != 0 && top_parent != 0 && top_parent != parent_id) {
+	    	$scope.category_name = category_name;
+	    	$scope.level = 3;
+
+	    	angular.forEach($scope.parents, function(value, key) {
+			  if(top_parent == value.category_id) {
+			  	$scope.firstSelected = value;
+			  	$scope.parent_id = value.category_id;
+			  }
+			});
+
+			$scope.getparent();
+
+			$scope.$watch('secondcategories', function (newValue, oldValue, scope) {
+			    angular.forEach(newValue, function(value, key) {
+				  if(parent_id == value.category_id && $scope.level == 3) {
+				  	$scope.secondSelected = value;
+				  	$scope.parent_id = value.category_id;
+				  }
+				});	
+			});
+	    }	    
+	};
+
+	$scope.updateCategory = function() {
+		$http({
+			url : "/admin/catalog/update_category",
+			method: "POST",
+			headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+		    transformRequest: function(obj) {
+		        var str = [];
+		        for(var p in obj)
+		        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+		        return str.join("&");
+		    },
+			data : 	{category_name : $scope.category_name, parent_id : $scope.parent_id, top_parent : $scope.top_parent, category_id: $scope.category_id} // Data to be passed to API
+		})
+	    .then(function(response) {
+	    	$('#update-modal-close').click();
+	    	// Clear the boxes
+	    	Category.list();
+	    });
+	};
 });
 
 app.controller('AddItemController', function($scope, $http) {
@@ -340,20 +520,28 @@ app.controller('EditItemController', ["$location", "$scope", "$http", function($
 	};
 
 	EditItem.getDetails = function(item_id) {
-		$http.get("/admin/catalog/get_details",
+		
+		$http.get("/admin/catalog/get_brands",
 		{
-			headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-			params : { item_id : item_id }
+			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 		}).then(function(response) {
-			$scope.details = response.data.item[0];
-			$scope.top_category = response.data.top_parent_category;
-			$scope.parent_category = response.data.parent_category;
+			$scope.brands = response.data;
+			console.log($scope.brands);
 
-			$('#summernote').summernote('code', $scope.details.item_description);
+			$http.get("/admin/catalog/get_details",
+			{
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+				params : { item_id : item_id }
+			}).then(function(response) {
+				$scope.details = response.data.item[0];
+				$scope.top_category = response.data.top_parent_category;
+				$scope.parent_category = response.data.parent_category;
+				$scope.selectedBrand = response.data.item[0].brand_id;
 
-			console.log($scope.details);
-			console.log($scope.top_category);
-			console.log($scope.parent_category);
+				console.log($scope.selectedBrand);
+
+				$('#summernote').summernote('code', $scope.details.item_description);
+			});
 		});
 	};
 

@@ -15,7 +15,7 @@ class CategoriesTable extends Table
     public function getCategories()
     {
     	return $this->find()
-    				->select(['category_id', 'category_name', 'parent_id'])
+    				->select(['category_id', 'category_name', 'parent_id', 'top_parent', 'status'])
     				->toArray();
     }
 
@@ -46,7 +46,7 @@ class CategoriesTable extends Table
     public function getCatDetails($category)
     {
         return $this->find()
-                    ->select(['category_name', 'parent_id', 'top_parent'])
+                    ->select(['category_name', 'parent_id', 'top_parent', 'status'])
                     ->where(['category_id'=>$category])
                     ->toArray();
     }
@@ -59,7 +59,21 @@ class CategoriesTable extends Table
                     ->execute();
     }
 
+    public function updateCategoryStatus($category_id, $status)
+    {
+        return $this->query()->update()
+                    ->set(['status' => $status])
+                    ->where(['category_id' => $category_id])
+                    ->execute();
+    }
 
+    public function updateCategory($category_id, $category_name, $top_parent, $parent_id)
+    {
+        return $this->query()->update()
+                    ->set(['category_name' => $category_name, 'top_parent' => $parent_id, 'parent_id' => $parent_id])
+                    ->where(['category_id' => $category_id])
+                    ->execute();
+    }   
 }
 
 ?>

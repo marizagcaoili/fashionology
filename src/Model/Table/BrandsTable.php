@@ -14,7 +14,7 @@ class BrandsTable extends Table
     public function getBrands()
     {
     	return $this->find()
-    				->select(['brand_id','brand_name', 'brand_prefix'])
+    				->select(['brand_id', 'brand_name', 'brand_prefix', 'status'])
     				->toArray();
     }
 
@@ -32,5 +32,21 @@ class BrandsTable extends Table
                     ->where(['brand_id' => $prefix])
                     ->toArray();
     }
+
+    public function updateBrandStatus($brand_id, $status)
+    {
+        return $this->query()->update()
+                    ->set(['status' => $status])
+                    ->where(['brand_id' => $brand_id])
+                    ->execute();
+    }
+
+    public function updateBrand($brand_id, $brand_name, $brand_prefix)
+    {
+        return $this->query()->update()
+                    ->set(['brand_name' => $brand_name, 'brand_prefix' => $brand_prefix])
+                    ->where(['brand_id' => $brand_id])
+                    ->execute();
+    }    
 }
 ?>

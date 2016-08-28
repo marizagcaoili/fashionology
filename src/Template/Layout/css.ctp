@@ -1,4 +1,4 @@
-
+<link href="/back/bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
   <link rel="icon" type="image/gif/png" href="/img/hanger.png" >
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,4 +19,4 @@
   <!-- Theme style -->
  <link rel="stylesheet" href="/back/dist/css/AdminLTE.min.css">  
  <link rel="stylesheet" type="text/css" href="/back/dist/summernote.css"> 
-   <link rel="stylesheet" href="/back/dist/css/skins/skin-black-light.min.css">
+ <link rel="stylesheet" href="/back/dist/css/skins/skin-black-light.min.css">

@@ -132,16 +132,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <tr>
                   <th>Brand Name </th>
                   <th>Prefix</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th width="40px">Status</th>
+                  <th width="10px">Action</th>
                 </tr>
                 </thead>
                 <tbody>
                   <tr ng-repeat="brand in brands">
                     <td>{{brand.brand_name}}</td>
                     <td>{{brand.brand_prefix}}</td>
-                    <td></td>
-                    <td></td>
+                    <!--<td>{{brand.status==1 ? 'Active' : 'Inactive'}}</td>-->
+                    <td><input
+                          bs-switch
+                          ng-model="brand.status"
+                          type="checkbox"
+                          switch-active="{{ isActive }}"
+                          switch-on-text="{{ onText }}"
+                          switch-off-text="{{ offText }}"
+                          switch-on-color="{{ onColor }}"
+                          switch-off-color="{{ offColor }}"
+                          switch-animate="{{ animate }}"
+                          switch-size="{{ size }}"
+                          switch-label="{{ label }}"
+                          switch-icon="{{ icon }}"
+                          switch-radio-off="{{ radioOff }}"
+                          switch-label-width="{{ labelWidth }}"
+                          switch-handle-width="{{ handleWidth }}"
+                          switch-wrapper="{{ wrapper }}"
+                          ng-true-value="1"
+                          ng-false-value="0"
+                          switch-change="toggle(brand.brand_id, brand.status)"></td>
+                    <td><button type="submit" class="btn bg-primary btn-flat" data-toggle="modal" data-target="#editbrand" ng-click="editBrand(brand.brand_id, brand.brand_name, brand.brand_prefix)"><i class="fa fa-pencil"> </i></button></td>
                   </tr>
                 </tbody>
               </table>
@@ -164,27 +184,59 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <h4 class="modal-title" id="myModalLabel">Add Brand</h4>
               </div>
               <div class="modal-body">
-                    <div class="form-group row">
-                        <label for="name" class="col-xs-3 col-form-label">Brand Name</label>
-                         <div class="col-xs-9">
-                              <input type="text" class="form-control" placeholder="Category Name" aria-describedby="name"
-                              name="name" id="brand_name">
-                          </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="prefix" class="col-xs-3 col-form-label">Brand Prefix</label>
-                         <div class="col-xs-9">
-                              <input type="text" class="form-control" placeholder="Prefix" aria-describedby="prefix" name="prefix" id="brand_prefix">
-                          </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal" id="modal-close">Close</button>
-                  <button type="submit" class="btn btn-primary" style="border-radius:0px;" ng-click="add()"> Add</button>
-                </div>
+                  <div class="form-group row">
+                      <label for="name" class="col-xs-3 col-form-label">Brand Name</label>
+                       <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="Category Name" aria-describedby="name"
+                            name="name" id="brand_name">
+                        </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="prefix" class="col-xs-3 col-form-label">Brand Prefix</label>
+                       <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="Prefix" aria-describedby="prefix" name="prefix" id="brand_prefix">
+                        </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal" id="modal-close">Close</button>
+                <button type="submit" class="btn btn-primary" style="border-radius:0px;" ng-click="add()"> Add</button>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="modal fade" id="editbrand" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Edit Brand</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="form-group row">
+                      <label for="name" class="col-xs-3 col-form-label">Brand Name</label>
+                       <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="Category Name" aria-describedby="name"
+                            name="name" id="brand_name" ng-model="brand_name" value="{{brand_name}}">
+                        </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="prefix" class="col-xs-3 col-form-label">Brand Prefix</label>
+                       <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="Prefix" aria-describedby="prefix" name="prefix" id="brand_prefix" ng-model="brand_prefix" value="{{brand_prefix}}">
+                        </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal" id="update-modal-close">Close</button>
+                <button type="submit" class="btn btn-primary" style="border-radius:0px;" ng-click="update()"> Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
   <!-- Main Footer -->
   <footer class="main-footer">

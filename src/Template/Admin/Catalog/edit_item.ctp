@@ -139,8 +139,8 @@
                       <div class="form-group row">
                           <label for="brand" class="col-xs-3 col-form-label">Brand</label>
                            <div class="input-group col-xs-9">
-                                 <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.brand.brand_name}} aria-describedby="item-code" >
-                                 <button data-toggle="tooltip" data-placement="bottom" title="Change Brand" class="btn btn-flat col-xs-12"><i class="fa fa-exchange"></i></button>
+                               <select name= "brand" id="brand" ng-model="selectedBrand" ng-options="brand as brand.brand_name for brand in brands track by brand.brand_id" class="form-control" ng-change="getPrefix()" placeholder="Brand"  aria-describedby="brand">
+                                </select>
                             </div>
                       </div>
                       </div>
@@ -152,10 +152,16 @@
 
                             <div class="form-group row">
                                 <label for="status" class="col-xs-3 col-form-label">Status</label>  
-                                <div class="input-group col-xs-9">
-                                    <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.item_status}} aria-describedby="item-code" >
-                                    <button data-toggle="tooltip" data-placement="bottom" title="Change Status" class="btn btn-flat col-xs-12"><i class="fa fa-exchange"></i></button>
-                                </div>   
+                                 <div class="radio col-xs-9"">
+                                    <label class="col-xs-4" >
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                      Enabled 
+                                    </label>
+                                        <label class="col-xs-4" >
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      Disabled
+                                    </label>
+                                  </div>
                       
                             </div>
                         </div> <!-- column2 -->
@@ -192,14 +198,23 @@
                               </div> <!-- col1 -->
 
                               <div class="col-xs-6">
-                                <div class="form-group row">
+                     
                                     <label for="category" class="col-xs-3 col-form-label">Category</label>
                                      <div class="input-group col-xs-9">
-                                           <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.category.category_id}} aria-describedby="item-code" >
-                                      
-                                            <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.brand.brand_name}} aria-describedby="item-code" >
-                                           <input disabled type="text" name="item_code" id="itemCode" class="form-control" placeholder="Item Code" value= {{details.brand.brand_name}} aria-describedby="item-code" >
-                                           <button data-toggle="tooltip" data-placement="bottom" title="Change Brand" class="btn btn-flat col-xs-12"><i class="fa fa-exchange"></i></button>
+                                            <div class="form-group row">
+                                            <select id="category1" class="form-control" ng-model="selectedCategory" ng-options="firstCategory as firstCategory.category_name for firstCategory in firstCategories track by firstCategory.category_id" ng-change="firstCategory()"  aria-describedby="category">
+                                            </select>
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                             <select id="category2" class="form-control" ng-model="selectedCategory2" ng-options="secondCategory as secondCategory.category_name for secondCategory in secondCategories track by secondCategory.category_id" ng-change="secondCategory()"  aria-describedby="category">
+                                            </select>
+                                            </div>
+                                                       
+                                            <div class="form-group row">
+                                             <select id="category3" class="form-control" ng-model="thirdCategory" ng-options="thirdCategory as thirdCategory.category_name for thirdCategory in thirdCategories track by thirdCategory.category_id"  aria-describedby="category">
+                                            </select>
+                                            </div>
                                       </div>
                                 </div>
 

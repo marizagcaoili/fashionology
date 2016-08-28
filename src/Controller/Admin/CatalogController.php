@@ -235,6 +235,42 @@ class CatalogController extends Controller
         $this->render('category_list');
     }
 
+    public function updateCategoryStatus()
+    {
+        //disable ui rendering
+        $this->autoRender = false;
+        header('Content-Type: application/json');
+
+        $category = TableRegistry::get('Categories');
+
+        $category_id   = $this->request->data('category_id');
+        $status = $this->request->data('status');
+
+        $result = $category->updateCategoryStatus($category_id, $status);
+
+        echo json_encode($result);
+        exit();
+    }
+
+    public function updateCategory()
+    {
+        //disable ui rendering
+        $this->autoRender = false;
+        header('Content-Type: application/json');
+
+        $category = TableRegistry::get('Categories');
+
+        $category_id   = $this->request->data('category_id');
+        $category_name   = $this->request->data('category_name');
+        $top_parent   = $this->request->data('top_parent');
+        $parent_id   = $this->request->data('parent_id');
+
+        $result = $category->updateCategory($category_id, $category_name, $top_parent, $parent_id);
+
+        echo json_encode($result);
+        exit();
+    }
+
     public function addBrand()
     {
         //disable ui rendering
@@ -266,6 +302,40 @@ class CatalogController extends Controller
         exit();
     }
 
+    public function updateBrandStatus()
+    {
+        //disable ui rendering
+        $this->autoRender = false;
+        header('Content-Type: application/json');
+
+        $brand = TableRegistry::get('Brands');
+
+        $brand_id   = $this->request->data('brand_id');
+        $status = $this->request->data('status');
+
+        $result = $brand->updateBrandStatus($brand_id, $status);
+
+        echo json_encode($result);
+        exit();
+    }
+
+    public function updateBrand()
+    {
+        //disable ui rendering
+        $this->autoRender = false;
+        header('Content-Type: application/json');
+
+        $brand = TableRegistry::get('Brands');
+
+        $brand_id   = $this->request->data('brand_id');
+        $brand_name = $this->request->data('brand_name');
+        $brand_prefix = $this->request->data('brand_prefix');
+
+        $result = $brand->updateBrand($brand_id, $brand_name, $brand_prefix);
+
+        echo json_encode($result);
+        exit();
+    }
 
     public function getPrefix()
     {

@@ -140,6 +140,10 @@ Router::prefix('Admin', function ($routes) {
 
     $routes->connect ('/admin/catalog/get_categorydetails', ['controller' => 'catalog', 'action' => 'getCategoryDetails']);
 
+    $routes->connect ('/admin/catalog/update_category_status', ['controller' => 'catalog', 'action' => 'updateCategoryStatus']);
+
+    $routes->connect ('/admin/catalog/update_category', ['controller' => 'catalog', 'action' => 'updateCategory']);    
+
 
         //--/>CATEGORY
 
@@ -150,6 +154,10 @@ Router::prefix('Admin', function ($routes) {
     $routes->connect('/admin/catalog/get_brands', ['controller' => 'catalog', 'action' => 'getBrands']);
 
     $routes->connect('/admin/catalog/add_brand', ['controller' => 'catalog', 'action' => 'addBrand']);
+
+    $routes->connect('/admin/catalog/update_brand_status', ['controller' => 'catalog', 'action' => 'updateBrandStatus']);
+
+    $routes->connect('/admin/catalog/update_brand', ['controller' => 'catalog', 'action' => 'updateBrand']);
 
         //--/>BRAND
 

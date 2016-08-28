@@ -14,7 +14,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <style type="text/css">
   #alignright
   {
-    margin-left:90%;
+    margin-left: 80%;
   }
 </style>
 </head>
@@ -151,15 +151,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <thead>
                 <tr>
                   <th>Category Name </th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th width="40px">Status</th>
+                  <th width="10px">Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr ng-repeat="category in categories">
                 <td>{{category.category_name}}</td>
-                <td></td>
-                <td></td>
+                <td><input
+                      bs-switch
+                      ng-model="category.status"
+                      type="checkbox"
+                      switch-active="{{ isActive }}"
+                      switch-on-text="{{ onText }}"
+                      switch-off-text="{{ offText }}"
+                      switch-on-color="{{ onColor }}"
+                      switch-off-color="{{ offColor }}"
+                      switch-animate="{{ animate }}"
+                      switch-size="{{ size }}"
+                      switch-label="{{ label }}"
+                      switch-icon="{{ icon }}"
+                      switch-radio-off="{{ radioOff }}"
+                      switch-label-width="{{ labelWidth }}"
+                      switch-handle-width="{{ handleWidth }}"
+                      switch-wrapper="{{ wrapper }}"
+                      ng-true-value="1"
+                      ng-false-value="0"
+                      switch-change="toggle(category.category_id, category.status)"></td>
+                <td><button type="submit" class="btn bg-primary btn-flat" data-toggle="modal" data-target="#editcategory" ng-click="editCategory(category.category_id, category.category_name, category.top_parent, category.parent_id)"><i class="fa fa-pencil"> </i></button></td>
                 </tr>
                 </tbody>
 
@@ -190,7 +209,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <label for="brand" class="col-xs-3 col-form-label">Parent</label>
              <div class="col-xs-9">
                   <input type="hidden" name="categoryid1" id="category_parent">
-                  <select id="category" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="firstSelected" ng-options="parent as parent.category_name for parent in parents track by parent.category_id" ng-change="getparent()"></select>
+                  <select id="category" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="firstSelected" ng-options="parent as parent.category_name for parent in parents track by parent.category_id" ng-change="getparent()"></select><br>
 
 
                   <select id="category2" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="secondSelected" ng-options="secondcategory as secondcategory.category_name for secondcategory in secondcategories track by secondcategory.category_id" ng-change="secondparent()"></select>    
@@ -206,6 +225,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal" id="modal-close" >Cancel</button>
           <button type="button" class="btn btn-primary" ng-click="addCategory()" style="border-radius:0px;"> Add</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="editcategory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Edit Category</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          
+            <label for="brand" class="col-xs-3 col-form-label">Parent</label>
+             <div class="col-xs-9">
+                  <input type="hidden" name="categoryid1" id="category_parent">
+                  <select id="category" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="firstSelected" ng-options="parent as parent.category_name for parent in parents track by parent.category_id" ng-change="getparent()"></select><br>
+
+
+                  <select id="category2" type="text" class="form-control" placeholder="Parent" aria-describedby="parent" ng-model="secondSelected" ng-options="secondcategory as secondcategory.category_name for secondcategory in secondcategories track by secondcategory.category_id" ng-change="secondparent()"></select>    
+              </div>
+        </div>
+            <div class="form-group row">
+                <label for="brand" class="col-xs-3 col-form-label">Category Name</label>
+                 <div class="col-xs-9">
+                      <input type="text" id="name" class="form-control" placeholder="Category Name" aria-describedby="item-code" value="{{ category_name }}" ng-model="category_name">
+                  </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="border-radius:0px;" data-dismiss="modal" id="update-modal-close" >Cancel</button>
+          <button type="button" class="btn btn-primary" ng-click="updateCategory()" style="border-radius:0px;"> Update</button>
         </div>
       </div>
 
